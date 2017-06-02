@@ -27,3 +27,6 @@ Fonts required for rice:
 	siji
 	Liberation
 	FontAwesome
+
+
+Quick note: if you wish to use my conf, move ~/.scripts/tools/lock to /usr/bin/lock.
