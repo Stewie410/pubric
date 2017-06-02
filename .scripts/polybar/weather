@@ -1,0 +1,27 @@
+#!/bin/python
+
+
+# Import Support: URL, JSON
+import urllib.request, json
+
+# Define hardcoded vars
+city = "Chicago"
+country = "us"
+units = "imperial"
+unit = "F"
+
+# You'll need to create an account and provide an API key
+# From OpenWeatherMap.org -- its free to make an account and use
+# their API.
+api_key = ""
+
+# Define location and pull weather data
+loc = city + "," + country
+weather = eval(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&units={}&APPID={}&units={}".format(loc, units, api_key, units)).read())[2:-1])
+
+# Get weather description and temperature
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]))
+
+# Display the current weather
+print(("%s, %i°" + unit) % (info, temp))

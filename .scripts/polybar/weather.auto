@@ -1,0 +1,53 @@
+#!/bin/python
+#
+# TODO
+#	Add approximate weather conditions based on IP address (curl -4 icanhazip.com)
+#	Determine units based on country code
+
+# Import Support: URL, JSON, subprocess
+import urllib.request, json, subprocess
+
+# Pull geo location from ipinfo.io
+geo_json = eval(str(urllib.request.urlopen("http://ipinfo.io/json").read()))
+geo = json.loads(geo_json)
+city = geo["city"]
+geo_country = geo["country"].lower()
+
+
+# Determine units based on country code
+# To hardcode to metric, set metric = 1  
+metric = 0
+unit = None
+units = None
+if metric == 0:
+    if geo_country == "us":
+        unit = "F"
+        units = "imperial"
+    elif geo_country == "lr":
+        unit = "F"
+        units = "imperial"
+    elif geo_country == "mm":
+        unit = "F"
+        units = "imperial"
+    else:
+        unit = "C"
+        units = "metric"
+elif metic == 1:
+    unit = "C"
+    units = "metric"
+
+
+# Set API-Key from openweathermap.org
+api_key = "75582c19fd1575286cc8e486712751f5"
+
+
+# Define location and pull weather data
+loc = city + "," + geo_country
+weather = eval(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&units={}&APPID={}&units={}".format(loc, units, api_key, units)).read())[2:-1])
+
+# Get weather description and temperature
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]))
+
+# Display the current weather
+print(("%s, %i°" + unit) % (info, temp))

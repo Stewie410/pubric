@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Script to autoselect which weather script to run
+# If our SSID is 
+
+SSID=$(iwgetid wlp7s0 -r)
+if [[ ${SSID} == "Martinique1" ]]; then
+	python $HOME/.scripts/polybar/weather
+else
+	python $HOME/.scripts/polybar/weather.auto
+fi
+

@@ -1,0 +1,80 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are not comments
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system
+! config can be added there or also here below
+! for comments use "!"
+
+! Xft - X FreeType interface library settings
+Xft.dpi:				96
+Xft.antialias:				true
+Xft.autohint:				1
+Xft.hinting:				1
+Xft.hintstyle:				hintslight
+Xft.lcdfilter:				lcdlight
+Xft.rgba:				rgb
+
+! Font
+!*.facenane: 				Hack Regular
+!*.faceSize:				20
+
+! Colors! -- Note, *.color can be replaced with xprogram.color for individual coloring
+! Old color scheme
+!*.foreground:				#e3dac9
+!*.background:				#161616
+!*.cursorColor:				#e3dac9
+!*.color0:				#161616
+!*.color8:				#373737
+!*.color1:				#883322
+!*.color9:				#b1422c
+!*.color2:				#667755
+!*.color10:				#99bb66
+!*.color3:				#cc9911
+!*.color11:				#ffcc00
+!*.color4:				#223344
+!*.color12:				#556677
+!*.color5:				#664455
+!*.color13:				#aa7788
+!*.color6:				#66bbbb
+!*color14:				#94dbdb
+!*.color7:				#d0d0d0
+!*.color15:				#f6f6f6
+
+! NewProggie Color Scheme
+*.foreground:				#e3dac9
+*.background:				#161616
+*.cursorColor:				#e3dac9
+*.color0:				#161616
+*.color8:				#3c3c3c
+*.color1:				#a94744
+*.color9:				#e09690
+*.color2:				#608b4e
+*.color10:				#8fbf7f
+*.color3:				#d69831
+*.color11:				#f8bc41
+*.color4:				#569cd6
+*.color12:				#9cdcfe
+*.color5:				#b06386
+*.color13:				#d2879b
+*.color6:				#218693
+*.color14:				#77dfd8
+*.color7:				#b0b0b0
+*.color15:				#f7f7f7
+
+! Rofi
+! Color Theme
+!rofi.color-enabled:			true
+!rofi.color-window:			#000, #000, #000
+!rofi.color-normal:			#111, #819396, #222, #008ed4, #ffffff
+!rofi.color-active:			#002b37, #008ed4, #003643, #008ed4, #66c6ff
+!rofi.color-urgent:			#002b37, #da4281, #003643, #008ed4, #890661
+
+! Settings
+!rofi.fake-transparency:		true
+rofi.lines:				8
+rofi.bw:				0
+!rofi.opacity:				"10"
+rofi.hide-scrollbar:			true
+rofi.width:				30
