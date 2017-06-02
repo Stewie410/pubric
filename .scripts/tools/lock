@@ -1,0 +1,24 @@
+#!/bin/bash
+
+og="/home/alex/.config/feh/wall.png"
+img="/tmp/lock.png"
+
+resize() {
+	convert $1 -resize 1366x768 $2
+}
+
+# If /tmp doesn't exist, make
+if [ ! -d /tmp ]; then
+	mkdir /tmp
+fi
+
+# If lock.png doesn't exist, 
+# grab image from ~/.config/feh/wall.png | resize > /tmp/lock.png
+if [[ ! -f /tmp/lock.png ]]; then
+	resize $og $img
+else
+	rm /tmp/lock.png && resize $og $img
+fi
+
+# Lock session with lock.png as wallpaper
+i3lock -i $img
