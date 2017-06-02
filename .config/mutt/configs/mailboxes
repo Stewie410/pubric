@@ -1,0 +1,7 @@
+#vim:ft=muttrc
+
+mailboxes !
+mailboxes =Junk
+mailboxes =Viruses
+mailboxes =faxes
+mailboxes =mutt

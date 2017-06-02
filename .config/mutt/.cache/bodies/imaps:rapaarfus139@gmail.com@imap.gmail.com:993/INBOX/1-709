@@ -1,0 +1,731 @@
+Delivered-To: rapaarfus139@gmail.com
+Received: by 10.12.132.230 with SMTP id m93csp970480qva;
+        Sun, 28 May 2017 10:45:25 -0700 (PDT)
+X-Received: by 10.202.230.8 with SMTP id d8mr5404338oih.206.1495993525686;
+        Sun, 28 May 2017 10:45:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495993525; cv=none;
+        d=google.com; s=arc-20160816;
+        b=cQPm3Y297oX9yC76//DCXvpWHBJzcQLq4OYv1HmkzKt4cnDf1Y0QzoPYpdsOb8yXno
+         0JfVtkF+tBzrKbfXjDMb2+8dRcOZ5yXgszNC9feU5OZlODQLeGtkNsdScTRF3kFvR9bg
+         9amz0anpmouES4m2oUNpTi5S6Xo9YJzbjpeO/D9qktItjzGXkisdM5s3WYl19XTbB7e5
+         ENi+lw9hisx8VxCAZZzihf0BqFL9n9qXpDlquUCjFmjWlfm3VRSYBsN2RFYLxeWB2yYq
+         PaVoPLtvLaaczTSTHADr0xOLg+nujjgvKgI4ZfI9KQxoncu98oHT7SuqoVW0QdDEYo6I
+         YC5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:feedback-id:mime-version:subject:message-id:to:reply-to:from
+         :dkim-signature:arc-authentication-results;
+        bh=apkZspI4ZSrT4D2EEN7FCrxPSj7iaBNZKu4aFPmNjXc=;
+        b=CfaZ9W+cmgouUAXGNxHl9l5R4N5TDuLxKi1XgLGngpNWkw7jIzUCOXbKV60NgF49E5
+         ksbpRTXpVvrOJfaMfNSIlZ+O3RAC6mR04GhX0y8v4RtsuMBG0ZQJaFALStA/xkbGja1g
+         0gAjYcIUcIXkRJSdFv+hfHWGVr/NhMoI2NAZ1AAJdHXNvJPmJdO1tfae9x8Ra9XyZ6cd
+         lMEszE86uvR/SZj7DXFtxXUOX/gRRHJ5OiZcLJWp7v7uguOGcqpejTKnxiLcf11+63SE
+         WqXXikAQIvPpWJ5Ykx7j1U6HQLzLDsdFYtv2BN5qcshxOboEajqDrdTpQsldYFA2Hws+
+         gmPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@indeed.com;
+       spf=pass (google.com: domain of alert@indeed.com designates 198.58.75.70 as permitted sender) smtp.mailfrom=alert@indeed.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=indeed.com
+Return-Path: <alert@indeed.com>
+Received: from mail70.indeed.com (mail70.indeed.com. [198.58.75.70])
+        by mx.google.com with ESMTPS id l34si2852171otc.43.2017.05.28.10.45.25
+        for <rapaarfus139@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 28 May 2017 10:45:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alert@indeed.com designates 198.58.75.70 as permitted sender) client-ip=198.58.75.70;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indeed.com;
+       spf=pass (google.com: domain of alert@indeed.com designates 198.58.75.70 as permitted sender) smtp.mailfrom=alert@indeed.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=indeed.com
+Received: from aus-post2 (aus-post2.indeed.net [10.1.0.112])
+	by mail70.indeed.com (Postfix) with ESMTP id 3wbS2F1ZKQzGs4cG
+	for <rapaarfus139@gmail.com>; Sun, 28 May 2017 12:45:25 -0500 (CDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=indeed.com;
+	s=default; t=1495993525;
+	bh=apkZspI4ZSrT4D2EEN7FCrxPSj7iaBNZKu4aFPmNjXc=;
+	h=From:Reply-To:To:Subject:Date;
+	b=zu7DjnwC6n43bc6zYN0TsIivGfANPSEYV7kvqnfv+dnO9eCNsi/9WCMtm9/fjDHnx
+	 tG64bVvGaveCSMsevniFt4HwntD7ZdjpB6z/wFTOJGdlFeRVzQXypw7SKYSHE03DL0
+	 0H5qsASdWY4X+7V/Ickc0nIMDX137tH7QO93jHEw=
+From: Indeed Job Alert <alert@indeed.com>
+Reply-To: Indeed Job Alert <alert@indeed.com>
+To: rapaarfus139@gmail.com
+Message-ID: <1bh82j8te18oq9r9.1495993525207.Railgunner@aus-gensvc1>
+Subject: You have new recommended jobs: I/DD Direct Support and 9 more
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_66551126_29428022.1495993525213"
+Feedback-ID: RECJOB:RailgunnerDaemon:Indeed
+X-Indeed-Client-App: RailgunnerDaemon
+X-Indeed-Content-Type: RECJOB
+X-Indeed-TK: 1bh82j8un1d5obo5
+Date: Sun, 28 May 2017 12:45:25 -0500 (CDT)
+
+------=_Part_66551126_29428022.1495993525213
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Recommended Jobs for You
+
+Jobs 1 to 9 of 9 recommendations
+View all recommended jobs: http://www.indeed.com/recommendedjobs?from=rje&tk=1bh82j8te18oq9r9&key=-2260538107309786703&rgtk=1bh82j8tq1d5oaq0
+
+
+I/DD Direct Support
+ACI Support Specialists - Wilmington, NC
+A minimum of a valid high school diploma or equivalent. ACI Support Specialists is currently seeking Support Specialists for *New Hanover County.*....
+Indeed - May 25
+http://www.indeed.com/rc/clk?jk=50c501d9f46fff3b&from=rje&rgtk=1bh82j8te18oq9r9
+
+Assembly Worker
+Caliber Outdoor Furniture - Leland, NC
+* The ability to use power tools * Carpentry, construction skills or other similar experience using tools. * Hand eye coordination * Good vision * Attention
+Indeed - May 25
+http://www.indeed.com/rc/clk?jk=986432df676b4e71&from=rje&rgtk=1bh82j8te18oq9r9
+
+Warehouse Person (ATD)
+American Tire Distributors - Wilmington, NC
+While performing the duties of this job, the employee is occasionally required to stand; We look forward to your application!...
+American Tire Distributors - May 24
+http://www.indeed.com/rc/clk?jk=6356a60b38f8cb47&from=rje&rgtk=1bh82j8te18oq9r9
+
+Assembly Worker
+Flow Sciences, Inc. - Leland, NC
+Must be able to lift at least 50 pounds. Local Manufacturer is seeking to fill a part-time assembly position....
+Indeed - May 22
+http://www.indeed.com/rc/clk?jk=e0c2e42af53f5ab2&from=rje&rgtk=1bh82j8te18oq9r9
+
+Come Join Our Team As A Client Coordinator
+SeniorCorp - Virginia Beach, VA
+Exceptional understanding of the dynamics of customer service and employee relations. Picture yourself as a part of the fastest-growing organizations in Hampton...
+SeniorCorp - May 17
+http://www.indeed.com/rc/clk?jk=8f9cdf076a58c637&from=rje&rgtk=1bh82j8te18oq9r9
+
+Patient Coordinator
+Partners In Dental Health - Virginia Beach, VA
+Happy, high quality team-oriented dental office is seeking enthusiastic individual to help properly handle accounts and schedule appointments for our family
+Indeed - May 9
+http://www.indeed.com/rc/clk?jk=2f47f33df7033b7c&from=rje&rgtk=1bh82j8te18oq9r9
+
+MEDICAID ANALYST
+Sentara Healthcare - Virginia Beach, VA
+Optima Health has an opening for a Medicaid Analyst. This position is full time, day shift Responsible for supporting the management staff in finance in the
+Sentara Healthcare - May 5
+http://www.indeed.com/rc/clk?jk=58f03535b1cd582f&from=rje&rgtk=1bh82j8te18oq9r9
+
+Donation Coordinator I
+LifeNet Health - Virginia Beach, VA
+High School Diploma or GED Successful completion of a healthcare technical or professional program, to include EMT, LPN, Hospital Corpsman or related....
+LifeNet Health - May 5
+http://www.indeed.com/rc/clk?jk=98b70364d07e7585&from=rje&rgtk=1bh82j8te18oq9r9
+
+Family Support Coordinator
+LifeNet Health - Virginia Beach, VA
+Presentation experience speaking with various types of audiences. We are proud to be an EEO/AA employer EOE/M/F/Disability/Vet....
+LifeNet Health - May 1
+http://www.indeed.com/rc/clk?jk=8a95bdc7462a56c1&from=rje&rgtk=1bh82j8te18oq9r9
+
+
+View all recommended jobs: http://www.indeed.com/recommendedjobs?from=rje&tk=1bh82j8te18oq9r9&key=-2260538107309786703&rgtk=1bh82j8tq1d5oaq0
+
+Cancel this Recommended Job Alert: https://subscriptions.indeed.com/alerts/cancel?subId=58ae43e3e4b0f7c6b0c6a152&token=CkBtX3Rh150X3zmbTda-AmlWaNZJocR5_giVldivx8rhQTB80QqHVdEJKUNfIn4R7ps0r_dZiVeGKse9gOrfvOuZEiD4BzQRdk_XSA7ZKWkKQfCeamVEqHMeHXfwR2TOL8RmWRoQS8R1sXfS4fRUY2_3QCxZVA%3D%3D&co=US&hl=en&tmtk=1bh82j8te18oq9r9&rgtk=1bh82j8tq1d5oaq0&from=jarecjobs
+
+Indeed - one search. all jobs. | 6433 Champion Grandview Way, Building 1, Austin, TX 78750
+
+------=_Part_66551126_29428022.1495993525213
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+a{
+outline:none;
+color:#00c;
+text-decoration:underline;
+}
+a:hover{text-decoration:none !important;}
+a[x-apple-data-detectors]{color:inherit !important; text-decoration:none !important;}
+.active:hover{opacity:0.8;}
+.active{
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+transition:all 0.3s ease;
+}
+.link a:hover{text-decoration: underline !important;}
+.no-adr span{
+border: none !important;
+color: #000 !important;
+}
+a img{border:none;}
+table td{mso-line-height-rule:exactly;}
+.ExternalClass, .ExternalClass a, .ExternalClass span, .ExternalClass b, .ExternalClass br, .ExternalClass p, .ExternalClass div{line-height:inherit;}
+@media only screen and (max-width:500px) {
+/* default style */
+table.flexible {width:100% !important;}
+table.table-center {float:none !important; margin:0 auto !important; width:auto !important;}
+.hide {display:none !important; width:0 !important; height:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important;}
+span.db {display:block !important;}
+td.img-flex img{width:100% !important; height:auto !important;}
+td.aligncenter {text-align:center !important;}
+tr.table-holder {display:table !important; width:100% !important;}
+th.tcap {display:table-caption !important; width:100% !important;}
+th.thead {display:table-header-group !important; width:100% !important;}
+th.trow {display:table-row !important; width:100% !important;}
+th.tfoot {display:table-footer-group !important; width:100% !important;}
+th.flex {display:block !important; width:100% !important;}
+/* custom style */
+td.content {padding: 25px 15px !important;}
+}
+@media only screen and (max-width: 800px) {
+.show-when-mobile {
+display: block!important;
+max-height: none!important;
+}
+.hide-when-mobile {
+display: none!important;
+}
+}
+.image_ad_desktop {
+max-width: 464px;
+height: auto;
+}
+</style>
+</head>
+<body style="margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" bgcolor="#f2f2f2">
+<table style="min-width:320px;" width="100%" cellspacing="0" cellpadding="0" bgcolor="#f2f2f2">
+<tr>
+<td style="padding: 0 10px;">
+<!--[if (gte mso 9)|(IE)]>
+<table style="width: 100%;">
+<tr>
+<td>
+<center>
+<table style="width: 610px; margin: 0 auto; text-align: left;">
+<tr>
+<td>
+<![endif]-->
+<table class="flexible" align="center" style="margin:0 auto;max-width:610px;" cellpadding="0" cellspacing="0">
+<!-- header -->
+<tr>
+<td align="center" style="padding: 25px 0;">
+<a href=http://www.indeed.com target="_blank" style="text-decoration:none;"><img src="http://tophat-cms-prod.s3.amazonaws.com/wp-content/uploads/2016/02/18221139/logo9.png" style="vertical-align:top; width: 137px; height: 36px; font:bold 36px/36px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#2164f3;" alt="indeed" width="137" height="36" /></a>
+</td>
+</tr>
+<!-- content -->
+<tr>
+<td class="content" bgcolor="#ffffff" style="padding: 25px 19px;">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading2" align="center" style="font:23px/28px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#f60; padding: 0 0 24px; border-bottom: 1px solid #c9c9c9;">
+Recommended Jobs for You
+</td>
+</tr>
+<!-- block -->
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=50c501d9f46fff3b&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=50c501d9f46fff3b&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>I/DD Direct Support</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+ACI Support Specialists
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:55.199997px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/Aci-Support-Specialists/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+9 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Wilmington, NC
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+A minimum of a valid high school diploma or equivalent. ACI Support Specialists is currently seeking Support Specialists for *New Hanover County.*....
+</td>
+</tr>
+<tr>
+<td class="easy-apply-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;">
+Easily apply
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 25
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=986432df676b4e71&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=986432df676b4e71&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Assembly Worker</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+Caliber Outdoor Furniture
+</span>
+<span class="sg-paragraph-large db">
+- Leland, NC
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+* The ability to use power tools * Carpentry, construction skills or other similar experience using tools. * Hand eye coordination * Good vision * Attention
+</td>
+</tr>
+<tr>
+<td class="easy-apply-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;">
+Easily apply
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 25
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=6356a60b38f8cb47&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=6356a60b38f8cb47&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Warehouse Person (ATD)</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+American Tire Distributors
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:42.0px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/American-Tire-Distributors/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+157 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Wilmington, NC
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+While performing the duties of this job, the employee is occasionally required to stand; We look forward to your application!...
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 24
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=e0c2e42af53f5ab2&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=e0c2e42af53f5ab2&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Assembly Worker</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+Flow Sciences, Inc.
+</span>
+<span class="sg-paragraph-large db">
+- Leland, NC
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+Must be able to lift at least 50 pounds. Local Manufacturer is seeking to fill a part-time assembly position....
+</td>
+</tr>
+<tr>
+<td class="easy-apply-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;">
+Easily apply
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 22
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=8f9cdf076a58c637&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=8f9cdf076a58c637&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Come Join Our Team As A Client Coordinator</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+SeniorCorp
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:46.800003px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/Seniorcorp/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+12 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Virginia Beach, VA
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+Exceptional understanding of the dynamics of customer service and employee relations. Picture yourself as a part of the fastest-growing organizations in Hampton...
+</td>
+</tr>
+<tr>
+<td class="easy-apply-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;">
+Easily apply
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 17
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=2f47f33df7033b7c&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=2f47f33df7033b7c&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Patient Coordinator</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+Partners In Dental Health
+</span>
+<span class="sg-paragraph-large db">
+- Virginia Beach, VA
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+Happy, high quality team-oriented dental office is seeking enthusiastic individual to help properly handle accounts and schedule appointments for our family
+</td>
+</tr>
+<tr>
+<td class="easy-apply-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;">
+Easily apply
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 9
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=58f03535b1cd582f&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=58f03535b1cd582f&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>MEDICAID ANALYST</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+Sentara Healthcare
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:46.800003px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/Sentara-Healthcare/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+341 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Virginia Beach, VA
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+Optima Health has an opening for a Medicaid Analyst. This position is full time, day shift Responsible for supporting the management staff in finance in the
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 5
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=98b70364d07e7585&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=98b70364d07e7585&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Donation Coordinator I</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+LifeNet Health
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:44.4px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/Lifenet-Health/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+33 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Virginia Beach, VA
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+High School Diploma or GED Successful completion of a healthcare technical or professional program, to include EMT, LPN, Hospital Corpsman or related....
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 5
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 5px 10px 5px; border-bottom: 1px solid #c9c9c9;">
+<a style="text-decoration:none;" target="_blank" href="http://www.indeed.com/rc/clk?jk=8a95bdc7462a56c1&from=rje&rgtk=1bh82j8te18oq9r9">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-heading4">
+<a target="_blank" href="http://www.indeed.com/rc/clk?jk=8a95bdc7462a56c1&from=rje&rgtk=1bh82j8te18oq9r9" style="text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c; padding: 0 0 5px;"
+>Family Support Coordinator</a>
+</td>
+</tr>
+<tr>
+<td style="font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f; padding: 0 0 4px;"
+>
+<span class="sg-paragraph-large" style="color: #000;"
+>
+LifeNet Health
+</span>
+<span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style="display: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; background-image: url(http://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:44.4px; background-position: 0 11px;"></span></span>
+<span style="display:inline-block;font-size:13px;">
+<a href="http://www.indeed.com/cmp/Lifenet-Health/reviews?utm_source=jobseeker_emails&utm_medium=email&utm_campaign=job_alerts" style="text-decoration:none; white-space:nowrap;" target="_blank">
+33 reviews
+</a>
+</span>
+<span class="sg-paragraph-large db">
+- Virginia Beach, VA
+</span>
+</td>
+</tr>
+<tr>
+<td class="job-info-snippet" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000; padding: 0 0 3px;">
+Presentation experience speaking with various types of audiences. We are proud to be an EEO/AA employer EOE/M/F/Disability/Vet....
+</td>
+</tr>
+<tr>
+<td class="post-date-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;"
+>
+May 1
+</td>
+</tr>
+<tr>
+<td class ="sponsored-text-footer" style="font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#CD29C0;"
+>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<!-- block-btn -->
+<tr>
+<td style="padding: 24px 0 0;">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" class="sg-paragraph-normal" style="font:bold 13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#000; padding: 0 0 8px;">
+Jobs 1 to 9 of 9 recommendations
+</td>
+</tr>
+<tr>
+<td style="padding: 0 0 15px;">
+<table class="flexible" width="300" align="center" style="margin: 0 auto; max-width: 300px;" cellpadding="0" cellspacing="0">
+<tr>
+<td class="active" bgcolor="#2f5cd8" align="center" style="font:bold 15px/16px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#fff; border: 1px solid #1642bb; background: #2f5cd8 url(https://subscriptions.indeed.com/images/ja/btn-bg.png) repeat-x; border-radius:4px; text-shadow: 0 -1px 0 #0f2299; -webkit-box-shadow: 0 0 4px 1px rgba(204,204,204,1); box-shadow: 0 0 4px 1px rgba(204,204,204,1); mso-padding-alt: 12px 10px;">
+<a href="http://www.indeed.com/recommendedjobs?from=rje&tk=1bh82j8te18oq9r9&key=-2260538107309786703&rgtk=1bh82j8tq1d5oaq0" target="_blank" style="text-decoration:none; color: #fff; display: block; padding: 12px 10px;"
+>View All Recommended Jobs</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- footer -->
+<tr>
+<td style="padding: 27px 15px;">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td class="sg-paragraph-small link no-adr" align="center" style="font:11px/16px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#000; padding: 0 0 20px;">
+<a href="http://www.indeed.com?from=rje"><font color="#2164f3"><b>Indeed</b></font></a> - one search. all jobs. | 6433 Champion Grandview Way, Building 1, Austin, TX 78750
+</td>
+</tr>
+<tr>
+<td class="sg-paragraph-small link" align="center" style="font:11px/16px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;">
+If you no longer wish to receive recommended job alerts, you may unsubscribe <a href="https://subscriptions.indeed.com/alerts/cancel?subId=58ae43e3e4b0f7c6b0c6a152&token=CkBtX3Rh150X3zmbTda-AmlWaNZJocR5_giVldivx8rhQTB80QqHVdEJKUNfIn4R7ps0r_dZiVeGKse9gOrfvOuZEiD4BzQRdk_XSA7ZKWkKQfCeamVEqHMeHXfwR2TOL8RmWRoQS8R1sXfS4fRUY2_3QCxZVA%3D%3D&co=US&hl=en&tmtk=1bh82j8te18oq9r9&rgtk=1bh82j8tq1d5oaq0&from=jarecjobs" target="_blank" style="text-decoration:none; color: #00c;">here</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</table>
+<img src="http://www.indeed.com/imgping?type=recjob&tk=1bh82j8te18oq9r9&aluidhash=58ae43e3e4b0f7c6b0c6a152" height="1" width="1">
+</body>
+</html>
+------=_Part_66551126_29428022.1495993525213--

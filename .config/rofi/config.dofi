@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#custom rofi options
+rofi () {
+	rofi -regex -tokenize -i -lines 30 -width 1500 -no-levenshtein-sort "$@"
+}
+
+# Set root directories
+noteroot="$HOME/Documents/todo"
+
+# Where to store done todos
+done_notes="${noteroot}/done"
+
+# Set browser
+BROWSER="vivaldi-stable"
+
+# Color of title/urls
+title_color="#2d7ed8"
+
+# Hotkeys
+switch="Alt+Tab"
+new="Ant+n"
+
+# Maximum length of shown url
+url_length=100

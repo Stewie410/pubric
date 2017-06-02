@@ -1,0 +1,8 @@
+#vim:ft=muttrc
+
+folder-hook 'user.mail.school.edu'		'source ~/.config/mutt/accounts/school-gmail'
+folder-hook 'user1.gmail.com'			'source ~/.config/mutt/accounts/gmail1'
+folder-hook 'user2.gmail.com'			'source ~/.config/mutt/accounts/gmail2'
+folder-hook 'user.icloud.com'			'source ~/.config/mutt/accounts/icloud'
+folder-hook 'user.rocketmail.com'		'source ~/.config/mutt/accounts/yahoo'
+folder-hook 'user.aol.com'			'source ~/.config/mutt/accounts/aol'

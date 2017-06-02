@@ -1,0 +1,1 @@
+/home/alex/rices/stewie410/pubrice/.scripts/polybar/launch.sh

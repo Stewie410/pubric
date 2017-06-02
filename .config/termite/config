@@ -1,0 +1,136 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+#mouse_autohide = true -- default
+mouse_autohide = true
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+scrollback_lines = 10000
+search_wrap = true
+
+
+padding = 5
+
+# Fonts :: Default == Monospace 14px
+#font = Iosevka 14px
+#font = Fira Mono 14px
+#font = Noto Mono 14px
+#font = Noto\ Mono\ for\ Powerline 14px
+#font = Nimbus Mono PS 14px
+font = Hack 14px
+#font =  DejaVu Sans Mono 14px 
+#font = Liberation Mono 14px
+
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# set size hints for the window
+#size_hints = false
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+[colors]
+# Defaults
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+#foreground = #dcdccc
+#foreground_bold = #ffffff
+#background = #3f3f3f
+
+# urxvt Colors
+#cursor = #e3dac9
+#cursor_foreground = #e3dac9
+foreground = #e3dac9
+foreground_bold = #e3dac9
+background = #161616
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# if unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# colors from color0 to color254 can be set
+# Color 0-7 = Black, Red, Green, Dark Yellow, Blue, Magenta, Cyan, Light Gray
+# Color 8-15 = Dark Gray, Light Red, Light Green, Yellow, Light Blue, Light Magenta, Light Cyan, White
+#
+# Defaults
+#color0 = #3f3f3f
+#color1 = #705050
+#color2 = #60b48a
+#color3 = #dfaf8f
+#color4 = #506070
+#color5 = #dc8cc3
+#color6 = #8cd0d3
+#color7 = #dcdccc
+#color8 = #709080
+#color9 = #dca3a3
+#color10 = #c3bf9f
+#color11 = #f0dfaf
+#color12 = #94bff3
+#color13 = #ec93d3
+#color14 = #93e0e3
+#color15 = #ffffff
+
+# urxvt coloring
+#color0 = #161616
+#color8 = #373737
+#color1 = #883322
+#color9 = #b1422c
+#color2 = #667755
+#color10 = #99bb66
+#color3 = #cc9911
+#color11 = #ffcc00
+#color4 = #223344
+#color12 = #556677
+#color5 = #664455
+#color13 = #aa7788
+#color6 = #66bbbb
+#color14 = #94dbdb
+#color7 = #d0d0d0
+#color15 = #f6f6f6
+
+# NewProggie Color Scheme
+color0 = #161616
+color8 = #3c3c3c
+color1 = #a94744
+color9 = #e09690
+color2 = #608b4e
+color10 = #8fbf7f
+color3 = #d69831
+color11 = #f8bc41
+color4 = #569cd6
+color12 = #9cdcfe
+color5 = #b06386
+color13 = #d2879b
+color6 = #218693
+color14 = #77dfd8
+color7 = #b0b0b0
+color15 = #f7f7f7
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s

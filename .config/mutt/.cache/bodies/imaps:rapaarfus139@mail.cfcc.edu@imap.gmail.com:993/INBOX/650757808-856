@@ -1,0 +1,120 @@
+Delivered-To: rapaarfus139@mail.cfcc.edu
+Received: by 10.237.43.100 with SMTP id p91csp497722qtd;
+        Thu, 19 Jan 2017 14:54:37 -0800 (PST)
+X-Received: by 10.157.11.37 with SMTP id a34mr5532965ota.258.1484866477365;
+        Thu, 19 Jan 2017 14:54:37 -0800 (PST)
+Return-Path: <wgvandergriff99@mail.cfcc.edu>
+Received: from mail-ot0-x22b.google.com (mail-ot0-x22b.google.com. [2607:f8b0:4003:c0f::22b])
+        by mx.google.com with ESMTPS id f201si1889084oib.64.2017.01.19.14.54.37
+        for <rapaarfus139@mail.cfcc.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 19 Jan 2017 14:54:37 -0800 (PST)
+Received-SPF: pass (google.com: domain of wgvandergriff99@mail.cfcc.edu designates 2607:f8b0:4003:c0f::22b as permitted sender) client-ip=2607:f8b0:4003:c0f::22b;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of wgvandergriff99@mail.cfcc.edu designates 2607:f8b0:4003:c0f::22b as permitted sender) smtp.mailfrom=wgvandergriff99@mail.cfcc.edu
+Received: by mail-ot0-x22b.google.com with SMTP id f9so43553456otd.1
+        for <rapaarfus139@mail.cfcc.edu>; Thu, 19 Jan 2017 14:54:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cfcc-edu.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=A+3N+x1MRtE9SP5Ku/E9Na3unATeiUBdGgBtVLKpEHg=;
+        b=F5/WX1ypEbRocHKzAgmQLdGS7DlhYEg+oM16bCXm7STXgTTJyLoaRxpBKQTZ1lC3Ge
+         kdZooZ6KUoqqSfvuE7XWmETaBCSUhP4b+qzXBxVDgDvWrWN7nSSmyj0CCVL0X8nwyl1e
+         xEnS1vg9vC+Wso7FaHvmvNmdYkeklkvRMs6DNU0TkkQ1yfImj8VLg26r2a9x/HSv80jL
+         FcNghf6/mUMaQC5MYXi6Pdcg9np2nEFhDgno72UURl6WQJ0jQ8g4XN9UJL9NHo8+mnH7
+         8+e8UoToeSqiS0vZwFoeI6UC9sQBah1qQAHEyN6vK4tPe/ekUDtv6LsC8QiBgtMNRm9V
+         9qyQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=A+3N+x1MRtE9SP5Ku/E9Na3unATeiUBdGgBtVLKpEHg=;
+        b=bQ56zAOjCR46QtDcDTSk/VpBJaL/lLlcsKG78dRhr7dxSobQI7rl74snh6LTLSxSLE
+         r52YTKd53LzTW6DM2gUJjGTqiyLk/5vMeVwbnEX/+eOWfW/v57doea1tvLWWo0DPS97h
+         CYu8igx3MBA1cQ9lPQarFGClFu8XZ1pjLOOAs4IzEAX3GlT9EXDbUjcO7lUeNWpOD2jl
+         FXnXLMJoRUnh2Ds84RzYGC9pfXkXFoDt4obhQxwu0jzhysmIqcn+stXHhjROMNCjJv2d
+         fr0P81QoOYiDj+MmuBDTHf8vwFysc181OLK3CbCteiDccCUvg4KklsSbo7qYO8nCoU9P
+         IDBQ==
+X-Gm-Message-State: AIkVDXKyTqq3N1nnyk14ZuPlrBRbJwEeUwBPm8PQpBOKhAJIdUxdlzZ0b4NRLfge46xqqu3v+JIpoJ/Xk97ZrqsaesI=
+X-Received: by 10.157.27.169 with SMTP id z38mr5232942otd.262.1484866476838;
+ Thu, 19 Jan 2017 14:54:36 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.182.3.229 with HTTP; Thu, 19 Jan 2017 14:54:16 -0800 (PST)
+In-Reply-To: <CAN1sbjfxK_KGZQqss4uk-qW5aMjBtJQChhpXase811L1wiqeAQ@mail.gmail.com>
+References: <CAN1sbjfxK_KGZQqss4uk-qW5aMjBtJQChhpXase811L1wiqeAQ@mail.gmail.com>
+From: Greg Vandergriff <gvandergriff@cfcc.edu>
+Date: Thu, 19 Jan 2017 17:54:16 -0500
+Message-ID: <CAC6SLuXE_GwU_6iuKUP08TTNohrzH2gEv4QL=jeyx=Pph70ttw@mail.gmail.com>
+Subject: Re: CompTIA Certifications
+To: Richard Paarfus <rapaarfus139@mail.cfcc.edu>
+Content-Type: multipart/alternative; boundary=001a113cc7fae4367105467a6a06
+
+--001a113cc7fae4367105467a6a06
+Content-Type: text/plain; charset=UTF-8
+
+Richard,
+
+You would need to talk to Keith Wilson about the discount vouchers.
+I would go after  A+, then Network +, Then Security +   if it was me :)
+
+Have a good evening.
+
+Mr.V.
+
+On Wed, Jan 18, 2017 at 4:39 PM, Richard Paarfus <rapaarfus139@mail.cfcc.edu
+> wrote:
+
+> Hi Mr. V,
+>
+> Hope you had a nice holiday and the new semester is going well.  Looking
+> forward, I figured I should probably start working on getting my
+> certifications while I'm waiting for commencement and all that stuff.  I
+> remember hearing that CFCC offers a voucher/discount service to current
+> students and the like, and was just wondering you you could point me in the
+> right direction to get more information on the subject.  As well as,
+> perhaps a recommendation or two as to which certifications I should strive
+> for first following A+.
+>
+> Thank you for your time,
+> Alex Paarfus
+>
+
+
+
+-- 
+Greg Vandergriff
+Computer Technology Integration Instructor
+Cape Fear Community College
+Wilmington, NC 28401
+910.362.7292
+
+--001a113cc7fae4367105467a6a06
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Richard,<div><br></div><div>You would need to talk to Keit=
+h Wilson about the discount vouchers.</div><div>I would go after =C2=A0A+, =
+then Network +, Then Security + =C2=A0 if it was me :)</div><div><br></div>=
+<div>Have a good evening.</div><div><br></div><div>Mr.V.</div></div><div cl=
+ass=3D"gmail_extra"><br><div class=3D"gmail_quote">On Wed, Jan 18, 2017 at =
+4:39 PM, Richard Paarfus <span dir=3D"ltr">&lt;<a href=3D"mailto:rapaarfus1=
+39@mail.cfcc.edu" target=3D"_blank">rapaarfus139@mail.cfcc.edu</a>&gt;</spa=
+n> wrote:<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;b=
+order-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr"><div><div><div=
+>Hi Mr. V,<br><br></div>Hope you had a nice holiday and the new semester is=
+ going well.=C2=A0 Looking forward, I figured I should probably start worki=
+ng on getting my certifications while I&#39;m waiting for commencement and =
+all that stuff.=C2=A0 I remember hearing that CFCC offers a voucher/discoun=
+t service to current students and the like, and was just wondering you you =
+could point me in the right direction to get more information on the subjec=
+t.=C2=A0 As well as, perhaps a recommendation or two as to which certificat=
+ions I should strive for first following A+.<br><br></div>Thank you for you=
+r time, <br></div>Alex Paarfus<br></div>
+</blockquote></div><br><br clear=3D"all"><div><br></div>-- <br><div class=
+=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">Gr=
+eg Vandergriff<br>Computer Technology Integration Instructor<br>Cape Fear C=
+ommunity College<br>Wilmington, NC 28401<br>910.362.7292</div></div>
+</div>
+
+--001a113cc7fae4367105467a6a06--

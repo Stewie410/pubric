@@ -1,0 +1,26 @@
+#vim:ft=mutt
+# Example iCloud conf
+
+set imap_user = 		"user@me.com"
+set imap_pass = 		"app-pass"
+set smtp_url = 			"smtp://user@smtp.mail.me.com:587/"
+set smtp_pass = 		"app-pass"
+set from = 			"user@me.com"
+set realname = 			"Real Name"
+
+set folder = 			"imaps://user@imap.mail.me.com:993/"
+set spoolfile = 		"+INBOX"
+set record = 			/dev/null
+set postponed = 		"+[iCoud]/Drafts"
+set header_cache = 		~/.config/mutt/.cache/headers
+set message_cachedir = 		~/.config/mutt/.cache/bodies
+set certificate_file = 		~/.config/mutt/.cache/certificates
+set ssl_starttls = 		yes
+set ssl_force_tls = 		yes
+set imap_pipeline_depth = 	0
+
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[iCloud]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[iCLoud]/Sent Mail<enter>" "Go to sent mail"
+macro index gt "<change-folder>=[iCloud]/Trash<enter>" "Go to trash"
+macro index gd "<change-folder>=[iCloud]/Drafts<enter>" "Go to drafts"

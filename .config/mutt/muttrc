@@ -1,0 +1,46 @@
+# User configuration file for (Neo)mutt
+#
+# System settings
+set sort = 'reverse-date'							# Sort by date, descending
+set editor = vim								# Set editor to vim
+set timeout = "5"								# Set timeout to 5s
+set mail_check = "10"								# Check for mail every 10m
+set mailcap_path = ~/.config/mutt/configs/mailcap				# Set mailcap file
+set date_format = "%m/%d/%y %I:%M"						# Set date to <mo>/<dy>/<yr> hr:min
+set index_format = "%2C %Z %d %-15.15F %s (%-4.4c)"				# Set index format
+set include									# Include messages in replies
+set postpone = ask-no								# Ask about postponing
+set print = ask-yes								# Ask about printing
+set delete = ask-yes								# Ask about deleting
+set noallow_8bit								# 8bit isn't safe via Demon
+set attribution = "* %n <%a> [%{%m/%d/%Y %H:%M:%S %Z}]:\n"			# Attribution line
+set edit_headers								# Ability to edit message headers
+set nobeep									# Don't beep at me
+set fcc_clear									# Keep FCC's clear of signatures and encryption
+set nopipe_decode								# Don't decode messages when piping
+set alias_file = ~/.config/mutt/configs/aliases					# Define location of aliases file
+set pager_stop									# Don't skip messages on the next page
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-zA-Z0-9]+[>|]+)+"			# What we consider to be a quote
+set to_chars = " +TCF"								# Drop the "L"
+
+
+# UI Settings
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+
+# Files 
+source ~/.config/mutt/accounts/icloud/stewie410/conf				# Load my default account
+source ~/.config/mutt/configs/aliases						# Define my aliases
+source ~/.config/mutt/configs/bindings						# Define my key bindings
+source ~/.config/mutt/configs/macros						# Define my macros
+source ~/.config/mutt/configs/colors						# Define mutt's colors
+source ~/.config/mutt/configs/folder-hooks					# Define folder hooks
+source ~/.config/mutt/configs/auto_views					# Define auto_views
+source ~/.config/mutt/configs/subscriptions					# Define the list of subscribed mailing lists
+source ~/.config/mutt/configs/mailboxes						# Define the list of folders that receive mail
+source ~/.config/mutt/configs/headers						# Define header display
+source ~/.config/mutt/configs/save-hooks					# Define save hooks
+source ~/.config/mutt/configs/fcc-hooks						# Define fcc hooks
+source ~/.config/mutt/configs/message-hooks					# Define message hooks
+source ~/.config/mutt/configs/non-standard					# Support for mutt patches

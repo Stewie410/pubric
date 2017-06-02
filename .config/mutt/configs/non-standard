@@ -1,0 +1,5 @@
+#vim:ft=muttrc
+
+
+# Support for compressed folder (read-only in this case)
+open-hook \\.gz$ "gzip -cd %f > %t"

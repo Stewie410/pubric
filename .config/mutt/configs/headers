@@ -1,0 +1,25 @@
+#vim:ft=muttrc
+
+# Default, ignore all headers
+ignore *
+
+# Un-ignore the ones I want to see
+unignore From:
+unignore To:
+unignore Reply-To:
+unignore Mail-Followup-To:
+unignore Subject:
+unignore Date:
+unignore Organization:
+unignore Newsgroups:
+unignore CC:
+unignore BCC:
+unignore Message-ID:
+unignore User-Anget:
+unignore X-Mailer:
+unignore X-Junked-Because:
+unignore X-SpamProbe:
+
+# Order the visable header lines:
+hdr_order From: To: Subject: User-Agent: X-Mailer:
+#hdr_order From: Subject: To: Date: CC: BCC: Reply-To: Mail-Followup-To: Organization: User-Agent: X-Mailer:

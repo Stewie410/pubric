@@ -1,0 +1,521 @@
+Return-path: <957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com>
+Received: from pv33p00im-smtpin006.me.com ([17.142.194.145])
+ by ms25561.mac.com (Oracle Communications Messaging Server 7.0.5.38.0 64bit
+ (built Aug  1 2016)) with ESMTP id <0OQI00JYXN4NLY00@ms25561.mac.com> for
+ stewie410@me.com; Thu, 25 May 2017 16:00:24 +0000 (GMT)
+Original-recipient: rfc822;stewie410@me.com
+Received: from em-sj-02.mktomail.com (em-sj-02.mktomail.com [199.15.214.202])
+ by pv33p00im-smtpin006.me.com
+ (Oracle Communications Messaging Server 7.0.5.38.0 64bit (built Feb 26 2016))
+ with ESMTPS id <0OQI00MX6N4MT900@pv33p00im-smtpin006.me.com> for
+ stewie410@me.com (ORCPT stewie410@me.com); Thu,
+ 25 May 2017 16:00:23 +0000 (GMT)
+Authentication-results: pv33p00im-dmarcmilter007.me.com; dmarc=none
+ header.from=nuix.com
+Authentication-results: pv33p00im-spfmilter008.me.com; spf=pass
+ (pv33p00im-spfmilter008.me.com: domain of
+ 957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com designates
+ 199.15.214.202 as permitted sender)
+ smtp.mailfrom=957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com;
+Received-SPF: pass (pv33p00im-spfmilter008.me.com: domain of
+ 957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com designates
+ 199.15.214.202 as permitted sender) receiver=pv33p00im-spfmilter008.me.com;
+ client-ip=199.15.214.202; helo=em-sj-02.mktomail.com;
+ envelope-from=957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com;
+Authentication-results: pv33p00im-dkimmilter017.me.com;	dkim=pass (1024-bit
+ key) header.d=mktomail.com header.i=@mktomail.com header.b=SkiyVGg7;
+	dkim-adsp=pass
+Authentication-results: pv33p00im-dkimmilter017.me.com;	dkim=pass (1024-bit
+ key) header.d=nuix.com header.i=@nuix.com header.b=tO22CJ5v;	dkim-adsp=pass
+Return-path: <info@nuix.com>
+Received: from [10.0.87.249] ([10.0.87.249:48424] helo=sjmas01.marketo.org)
+	by sjmta01.marketo.org (envelope-from <info@nuix.com>)
+	(ecelerity 3.6.8.47404 r(Core:3.6.8.0)) with ESMTP	id F1/88-20151-69FF6295;
+ Thu, 25 May 2017 11:00:22 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1495728022;
+	s=m1; d=nuix.com; i=@nuix.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=vBAyF8t47akwJQwFNb7EW8exoRJNxEzJcwkc14oI0Jw=;
+	b=tO22CJ5vfCqXPc0tep0rXeg5PwSIpbDFwB3w7u5++eFwUk68fP9nfNpvXFdlolZw
+	keDRMnWiYCAGlKuSOKxZLKi+8L9sU2YKrBCvcliXrbBBb3WCprtNPvEBLC2sx7t+Fp8
+	3x+GaNyuPArGm3+ymtwmQVo99q/X3zQ9QEDfXKkM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1495728022;
+	s=m1; d=mktomail.com; i=@mktomail.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=vBAyF8t47akwJQwFNb7EW8exoRJNxEzJcwkc14oI0Jw=;
+	b=SkiyVGg7miZOZKtX2zFdOEdW7a9JihYZvIZA6bHA7EgTTeu+d4BySp4qYz8Mn8OJ
+	ntW1DuwpiC6R8UOgBzUpJKMkk3Pko1yaQQ/8wuu2olWh6GO7fQhk3q/vZHxbMnaV+Kh
+	SdHJjLfpjVFFeJF9ibbpYssFv9qYTEJRuwZGZ4yc=
+Date: Thu, 25 May 2017 11:00:22 -0500 (CDT)
+From: Nuix Team <info@nuix.com>
+Reply-to: info@nuix.com
+To: stewie410@me.com
+Message-id:
+ <1834611164.734103164.1495728022243.JavaMail.root@sjmas01.marketo.org>
+Subject: Have you ever felt that TIFFing documents en masse is an archaic
+ practice?
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary="----=_Part_734103162_1749245935.1495728022243"
+List-Unsubscribe:
+ <mailto:JJBVAVZYNJPWQ2LIOJUGQ5TDIR3UUY2WJVTT2PI.33464.16560.9@unsub-sj.mktomail.com>
+x-icloud-spam-score: 3311331
+ f=nuix.com;e=em-sj-77.mktomail.com;is=yes;ir=no;spf=pass;dkim=pass;dmarc=absent/(noPolicy);gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=78 suspectscore=59 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=100 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1701120000 definitions=main-1705250303
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2017-05-25_12:,, signatures=0
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: 78
+X-CLX-Score: 78
+X-CLX-Shades: None
+X-MANTSH: 1TEIXWlwZGVoaGkNHB0tNT0ReQ0QeHhofEQpMQxcbHQQbHhgEGxMfBBkYEBseGh8
+ aEQpMWRcdEhEKWU0XZEVETxEKWUkXGnEaEBp3Bh8ScRgYEB93BhgaBhoRClleF2hueREKQ04XH
+ UZPYksfQxleTBpNaGldSHhDenloZmxpYUZvb0NdE2MRClhcFxkEGgQZGwdNEh0YEhkdGQUbHQQ
+ bHhgEGxMSBBsaGhAbHhofGhEKXlkXe3Jhe1MRCk1cFwceExEKTFoXQmVNQXsRCkNaFxsTEwQbH
+ wQYGx4EGBoYEQpCXhcbEQpCRhdtSR0SbFpraXxZThEKQkcXZHBbBRtHXWIcaH8RCkJFF2JTYFB
+ BfwVaE21oEQpCThdifkVwXR5MXQVOUBEKQkwXZUkBHkMSHnBle0ERCkJsF2UfUGt9fAF5eWZoE
+ QpCQBdpZGhBRWRuQE5PXxEKQlgXYWdBGRpkeEUbQkYRCkJ4F3pbaE9seGkYb3JCEQpNXhcbEQp
+ waBdpWnluR11zXHNHRhAZGhEKcGgXZU5JR2BOUGl+Y20QGRoRCnBoF3ofYVAaSU4TWGB/EBkaE
+ QpwaBdvZWAcAWh7Yh5nQxAZGhEKcGgXbB1/RE8FBUR8ZRgQGRoRCnB/F2BrW09aTEthYxtrEBk
+ aEQpwXxdsWn5efkVsb2MeYxAZGhEKcH0XbVN5bG54QEccGkcQGRoRCnB/F2NNEx1kU0cfTENIE
+ BkaEQpwXxdgWHxFWl5tUxtbfBAZGhEKcH0XY2Ubf09TRWFGZ3AQGRoRCnBfF2NDXWRtfEJvf3N
+ YEBkaEQpwfRdlYUAFExocAX9HWRAZGhEKcF8XbVBwc117X0ZETmAQGRoRCnB9F25JfRtgR0ZIY
+ BlDEBkaEQpwXxdpc29kUk5HbVpzHRAZGhEKcH0XbXBlRUheaVpgT0cQGRoRCnBfF2hoTH9/fWh
+ zc0ZiEBkaEQpwfRdtUmdob3tTH2RiHRAZGhEKcF8Xa3JpZnBi
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-MSFBL: c3Rld2llNDEwQG1lLmNvbUBkdnAtMTk5LTE1LTIxNC0yMDFAYmctc2otMDFAOTU3
+	LUpaRS0zOTk6MTU4MzI6MjA4NzE6ODQxNzk6MDoxNjU2MDo5OjMzNDY0OjEzODUx	NTA=
+X-Binding: bg-sj-01
+X-MarketoID: 957-JZE-399:15832:20871:84179:0:16560:9:33464:1385150
+X-MktArchive: false
+X-Mailfrom: 957-JZE-399.0.33464.0.0.16560.9.1385150@em-sj-77.mktomail.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_734103162_1749245935.1495728022243
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+To view this email as a web page, go to the following address: http://info.=
+nuix.com/index.php/email/emailWebview?mkt_tok=3DeyJpIjoiWkdKa01XVXlZbUptWTJ=
+GaiIsInQiOiJRNUNBc3JmU2d2ckhzKzJQaG9GT0lBVGVHa1lJMzFiUTkyVmw0Z1hTWGFPS0hiRW=
+o5L1FUZ2tNQ3ZJNWtrNTdUMWdJS3M2TkRhL1JOTjgzWGcyK0Y1ZGFyZWZhSTFmOW1sZlFEUXRnW=
+EpGMm9NNGltSjgvTVJzOElTYzEzbFpjNCJ9
+
+<http://mkto-f0203.com/E010J08mZvl030OE4z05V0x>  <http://mkto-f0203.com/yxz=
+JlO83010VEZw05n00040>=C2=A0  <http://mkto-f0203.com/c0504O8J0V3Z0x1Eo0lxz00=
+>=C2=A0  <http://mkto-f0203.com/HJ0040O038plzE50VxZ00y1>=C2=A0  <http://mkt=
+o-f0203.com/UOq805E0VZ0J1z04x3000zl>=C2=A0  <http://mkto-f0203.com/M30E0O0l=
+Jz5x100rV08Z0A4>=C2=A0=C2=A0
+<http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0>
+Dear Richard,=20
+
+If you work in eDiscovery, you=E2=80=99ve worked with TIFFs at some point. =
+Likely a lot. Have you ever felt that TIFFing documents en masse is an arch=
+aic practice?=20
+
+We aren=E2=80=99t suggesting that it=E2=80=99s something we can avoid altog=
+ether, only that advances in eDiscovery technology and practices along with=
+ the emergence of more complete metadata information might give us another =
+more efficient alternative.=20
+
+In our blog, we share some tips on:=20
+
+=20
+=09- How multi-user access for your eDiscovery tools can help to spread out=
+ workloads, automate redaction and save you time.
+=20
+=09- Using better keyword searches and metadata profiles to cull down the r=
+esults and TIFFing requirements, lowering your costs.
+=20
+=09- The value of advanced analytics and visualizations during early case a=
+ssessment to improve efficiency in your workflows.
+=20
+
+=20
+
+ <http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0>=20
+
+Kind regards,=20
+
+The Nuix Team
+Quick links=20
+  Read our blog <http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0>=20
+  Visit our website <http://mkto-f0203.com/v05l03zC01VEJ8txZ04O000>=20
+  Get in touch with us <http://mkto-f0203.com/CZ800u0DV0zJ031l4O0xE05>=20
+  Request a demo <http://mkto-f0203.com/n0J80Ev04O3V0EZ0lx001z5>
+Nuix North America Inc.
+13755 Sunrise Valley Drive, Suite 200, Herndon, VA 20171, USA
+Phone: +1 877 470 6849
+=20
+ Website <http://mkto-f0203.com/JZ4VJO0FxE03wzl01800050>=C2=A0=C2=A0 |=C2=
+=A0=C2=A0 Contact Us <http://mkto-f0203.com/CZ800u0DV0zJ031l4O0xE05>=C2=A0=
+=C2=A0 |=C2=A0=C2=A0 Request a Demo <http://mkto-f0203.com/n0J80Ev04O3V0EZ0=
+lx001z5>=C2=A0=C2=A0 |=C2=A0=C2=A0 Privacy Policy <http://mkto-f0203.com/wZ=
+lE351JV00008xx00O4G0z>
+
+If you no longer wish to receive these emails you may unsubscribe here: htt=
+p://info.nuix.com/UnsubscribePage.html?mkt_unsubscribe=3D1&mkt_tok=3DeyJpIj=
+oiWkdKa01XVXlZbUptWTJGaiIsInQiOiJRNUNBc3JmU2d2ckhzKzJQaG9GT0lBVGVHa1lJMzFiU=
+TkyVmw0Z1hTWGFPS0hiRWo5L1FUZ2tNQ3ZJNWtrNTdUMWdJS3M2TkRhL1JOTjgzWGcyK0Y1ZGFy=
+ZWZhSTFmOW1sZlFEUXRnWEpGMm9NNGltSjgvTVJzOElTYzEzbFpjNCJ9.
+
+------=_Part_734103162_1749245935.1495728022243
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html>
+<head>=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width; initial-scale=3D1;=
+ maximum-scale=3D1.0">=20
+<style type=3D"text/css">
+/* Put desktop styles here */
+body { width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit=
+-font-smoothing: antialiased; }
+table { border-collapse: collapse; }
+* {-webkit-text-size-adjust: none}
+
+@media only screen and (max-width: 640px)  {
+        body[yahoo] .deviceWidth { width:440px!important; }    =20
+        body[yahoo] .center { text-align: center!important; }
+                body[yahoo] .logo { width:280px !important;}
+                body[yahoo] #banner img { width:100% !important; height:inh=
+erit; }
+                        body[yahoo] #rcont1 td, body[yahoo] #image td { pad=
+ding:0 10px !important; }
+                body[yahoo] #date { width: 100% !important;}
+                body[yahoo] #date td { padding:0 !important; }
+}
+
+@media only screen and (max-width: 479px) {
+        body[yahoo] .deviceWidth { width:280px!important; }    =20
+        body[yahoo] .center { text-align: center!important; }
+                body[yahoo] .logo { width:200px !important;}
+                body[yahoo] #banner img { width:280px !important; }        =
+    =20
+}
+</style>=20
+<title>Nuix</title>=20
+</head>=20
+<body leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0"=
+ yahoo=3D"fix" style=3D"">
+<div style=3D"text-align: center"><font face=3D"Verdana" size=3D"1">To view=
+ this email as a web page, <a href=3D
+"http://mkto-f0203.com/v/P000301JVZ08I50z0lzExO4"
+>click here</a><br /><br /></font></div>
+=20
+<table bgcolor=3D"#F0F0F0" width=3D"100%" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" align=3D"center" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td width=3D"100%" valign=3D"top" style=3D"">=20
+<table bgcolor=3D"#FFFFFF" style=3D"border:1px solid #999999; " width=3D"60=
+0" class=3D"deviceWidth" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" a=
+lign=3D"center">=20
+<tbody>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"">=20
+<table width=3D"100%" class=3D"deviceWidth" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"">=20
+<tbody>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr style=3D"">=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+<td class=3D"deviceWidth" valign=3D"top" style=3D"font-family:Arial, Helvet=
+ica, sans-serif; font-size:12px; color:#333333; ">=20
+<div class=3D"mktEditable" id=3D"header" style=3D"">=20
+<table class=3D"logo" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" widt=
+h=3D"630" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 12px; co=
+lor: #333333;" valign=3D"top"><a title=3D"Nuix website" href=3D
+"http://mkto-f0203.com/E010J08mZvl030OE4z05V0x" target=3D"_blank"
+><img style=3D"display: block;" title=3D"logo" src=3D"http://info.nuix.com/=
+rs/nuix/images/new-nuix-logo-small.png" border=3D"0" alt=3D"logo" width=3D"=
+106" height=3D"70"></a></td>=20
+<td style=3D"font-family: Arial,Helvetica,sans-serif; font-size: 12px; colo=
+r: #333333; text-align: right;" valign=3D"top"><a title=3D"twitter" href=3D
+"http://mkto-f0203.com/yxzJlO83010VEZw05n00040" target=3D"_blank"
+><img title=3D"twitter" src=3D"http://info.nuix.com/rs/nuix/images/twitter-=
+new-logo.jpg" border=3D"0" alt=3D"twitter" width=3D"24" height=3D"24"></a>&=
+nbsp; <a title=3D"facebook" href=3D
+"http://mkto-f0203.com/c0504O8J0V3Z0x1Eo0lxz00" target=3D"_blank"
+><img title=3D"facebook" src=3D"http://info.nuix.com/rs/nuix/images/Faceboo=
+k-new-logo.jpg" border=3D"0" alt=3D"Facebook" width=3D"24" height=3D"24"></=
+a>&nbsp; <a title=3D"linkedin" href=3D
+"http://mkto-f0203.com/HJ0040O038plzE50VxZ00y1" target=3D"_blank"
+><img title=3D"linkedin" src=3D"http://info.nuix.com/rs/nuix/images/linkedi=
+n-new-logo.jpg" border=3D"0" alt=3D"linkedin" width=3D"24" height=3D"24"></=
+a>&nbsp; <a title=3D"youtube" href=3D
+"http://mkto-f0203.com/UOq805E0VZ0J1z04x3000zl" target=3D"_blank"
+><img title=3D"youtube" src=3D"http://info.nuix.com/rs/nuix/images/youtube-=
+new-logo.jpg" border=3D"0" alt=3D"youtube" width=3D"24" height=3D"24"></a>&=
+nbsp; <a title=3D"blog" href=3D
+"http://mkto-f0203.com/M30E0O0lJz5x100rV08Z0A4" target=3D"_blank"
+><img title=3D"blog" src=3D"http://info.nuix.com/rs/nuix/images/blog-new-lo=
+go.jpg" alt=3D"blog" width=3D"24" height=3D"24"></a>&nbsp;&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div></td>=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table class=3D"deviceWidth" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"">=20
+<tbody>=20
+<tr style=3D"">=20
+<td class=3D"deviceWidth" valign=3D"middle" style=3D"font-family:Arial, Hel=
+vetica, sans-serif; font-size:12px; color:#333333; ">=20
+<div class=3D"mktEditable" id=3D"banner" style=3D"">
+<p><a href=3D
+"http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0" target=3D"_blank" title=3D"=
+Download now"
+><img src=3D"http://info.nuix.com/rs/957-JZE-399/images/managing-tiffs-edis=
+covery-email-banner.png" alt=3D"Managing TIFFs in eDiscovery to Control Cos=
+t and Time" height=3D"200" width=3D"640" constrain=3D"true" imagepreview=3D=
+"false"></a><br></p>
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table width=3D"100%" class=3D"deviceWidth" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"font-family:Arial, Helvetica, sans-serif; font-s=
+ize:12px; color:#333333; ">=20
+<tbody>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr style=3D"">=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+<td valign=3D"top" style=3D"font-family:Arial, Helvetica, sans-serif; font-=
+size:13px; color:#333333; line-height:22px; ">=20
+<table id=3D"rcont1" class=3D"deviceWidth" align=3D"left" width=3D"388" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align:center; f=
+ont-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; ">=
+=20
+<tbody>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"text-align:left; font-family:Arial, Helvetica, =
+sans-serif; font-size:13px; color:#333333; line-height:22px; ">=20
+<div class=3D"mktEditable" id=3D"content-1" style=3D"">
+<p><span style=3D"font-size: 14px;">Dear Richard,</span></p>=20
+<p><span style=3D"font-size: 14px;">If you work in eDiscovery, you=E2=80=99=
+ve worked with TIFFs at some point. Likely a lot. Have you ever felt that T=
+IFFing documents en masse is an archaic practice?</span></p>=20
+<p><span style=3D"font-size: 14px;">We aren=E2=80=99t suggesting that it=E2=
+=80=99s something we can avoid altogether, only that advances in eDiscovery=
+ technology and practices along with the emergence of more complete metadat=
+a information might give us another more efficient alternative.</span></p>=
+=20
+<p><span style=3D"font-size: 14px;"><strong>In our blog, we share some tips=
+ on:</strong></span></p>=20
+<ul>=20
+<li><span style=3D"font-size: 14px;">How multi-user access for your eDiscov=
+ery tools can help to spread out workloads, automate redaction and save you=
+ time.</span><br></li>=20
+<li><span style=3D"font-size: 14px;">Using better keyword searches and meta=
+data profiles to cull down the results and TIFFing requirements, lowering y=
+our costs.</span><br></li>=20
+<li><span style=3D"font-size: 14px;">The value of advanced analytics and vi=
+sualizations during early case assessment to improve efficiency in your wor=
+kflows.</span><br></li>=20
+</ul>=20
+<p><span style=3D"font-size: 14px;"><a href=3D
+"http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0" target=3D"_blank" title=3D"=
+Download now"
+><img src=3D"http://info.nuix.com/rs/957-JZE-399/images/read-blog-button.pn=
+g" alt=3D"read-blog-button.png" height=3D"38" width=3D"202"></a></span></p>=
+=20
+<p><span style=3D"font-size: 14px;">Kind regards,</span></p>=20
+<p><span style=3D"font-size: 14px;">The Nuix Team</span></p>
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table id=3D"rcont2" class=3D"deviceWidth" align=3D"right" width=3D"202" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align:center; =
+font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; ">=
+=20
+<tbody>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"text-align:left; font-family:Arial, Helvetica, =
+sans-serif; font-size:13px; color:#333333; ">=20
+<table id=3D"date" class=3D"deviceWidth" bgcolor=3D"#0093D0" width=3D"202" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"font-family:Arial=
+, Helvetica, sans-serif; font-size:12px; color:#333333; ">=20
+<tbody>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr style=3D"">=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+<td valign=3D"top" style=3D"text-align:left; font-family:Arial, Helvetica, =
+sans-serif; font-size:13px; color:#333333; line-height:22px; ">=20
+<div class=3D"mktEditable" id=3D"content-2" style=3D"">
+<div style=3D"text-align: right;">=20
+<span style=3D"font-size: 18px; color: #ffffff;"><strong>Quick links</stron=
+g></span>=20
+<br>=20
+<img style=3D"display: block;" src=3D"http://info.nuix.com/rs/nuix/images/p=
+inkbox_divider.png" alt=3D"">=20
+<strong><a href=3D
+"http://mkto-f0203.com/K00O5JZ00VzB4s1l80x30E0" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: none;"
+>Read our blog</a></strong>=20
+<br>=20
+<img style=3D"display: block;" src=3D"http://info.nuix.com/rs/nuix/images/p=
+inkbox_divider.png" alt=3D"">=20
+<span style=3D"color: #ffffff;"><strong><a href=3D
+"http://mkto-f0203.com/v05l03zC01VEJ8txZ04O000" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: none;"
+>Visit our website</a></strong></span>=20
+<br>=20
+<img style=3D"display: block;" src=3D"http://info.nuix.com/rs/nuix/images/p=
+inkbox_divider.png" alt=3D"">=20
+<span style=3D"color: #ffffff;"><strong><a href=3D
+"http://mkto-f0203.com/CZ800u0DV0zJ031l4O0xE05" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: none;"
+>Get in touch with us</a></strong></span>=20
+<br>=20
+<img style=3D"display: block;" src=3D"http://info.nuix.com/rs/nuix/images/p=
+inkbox_divider.png" alt=3D"">=20
+<span style=3D"color:=20
+#ffffff;"><strong><a href=3D
+"http://mkto-f0203.com/n0J80Ev04O3V0EZ0lx001z5" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: none;"
+>Request a demo</a></strong></span>=20
+</div>
+</div></td>=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"text-align:left; font-family:Arial, Helvetica, =
+sans-serif; font-size:13px; color:#333333; ">=20
+<table id=3D"image" class=3D"deviceWidth" width=3D"202" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" style=3D"font-family:Arial, Helvetica, sans-s=
+erif; font-size:12px; color:#333333; ">=20
+<tbody>=20
+<tr>=20
+<td height=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; l=
+ine-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"text-align:center; font-family:Arial, Helvetica=
+, sans-serif; font-size:12px; color:#333333; ">=20
+<div class=3D"mktEditable" id=3D"content-3" style=3D""></div></td>=20
+</tr>=20
+<tr style=3D"">=20
+<td valign=3D"top" style=3D"text-align:left; font-family:Arial, Helvetica, =
+sans-serif; font-size:13px; color:#333333; line-height:22px; ">=20
+<div class=3D"mktEditable" id=3D"content-4" style=3D""></div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td height=3D"15" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table bgcolor=3D"#393A3C" width=3D"100%" class=3D"deviceWidth" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"font-family:Arial, Helvetica=
+, sans-serif; font-size:11px; color:#000000; text-align:center; ">=20
+<tbody>=20
+<tr>=20
+<td height=3D"10" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr style=3D"">=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+<td class=3D"deviceWidth" valign=3D"top" style=3D"text-align:left; font-fam=
+ily:Arial, Helvetica, sans-serif; font-size:11px; color:#fff; "><p style=3D=
+"mso-table-lspace:0;mso-table-rspace:0;"></p>=20
+<div class=3D"mktEditable" id=3D"footer" style=3D"">
+<p>Nuix North America Inc.<br>13755 Sunrise Valley Drive, Suite 200, Herndo=
+n, VA 20171, USA<br>Phone: +1 877 470 6849<br></p>=20
+<div style=3D"font-size: 11px; color: #ffffff; margin-bottom: 5px;">=20
+<a style=3D"color: #ffffff; text-decoration: none;" href=3D
+"http://mkto-f0203.com/JZ4VJO0FxE03wzl01800050"
+>Website</a>&nbsp;&nbsp;=20
+<span style=3D"color: #ffffff;">|</span>&nbsp;&nbsp;=20
+<a style=3D"color: #ffffff; text-decoration: none;" href=3D
+"http://mkto-f0203.com/CZ800u0DV0zJ031l4O0xE05"
+>Contact Us</a>&nbsp;&nbsp;=20
+<span style=3D"color: #ffffff;">|</span>&nbsp;&nbsp;=20
+<a style=3D"color: #ffffff; text-decoration: none;" href=3D
+"http://mkto-f0203.com/n0J80Ev04O3V0EZ0lx001z5"
+>Request a Demo</a>&nbsp;&nbsp;=20
+<span style=3D"color: #ffffff;">|</span>&nbsp;&nbsp;=20
+<a style=3D"color: #ffffff; text-decoration: none;" href=3D
+"http://mkto-f0203.com/wZlE351JV00008xx00O4G0z"
+>Privacy Policy</a>=20
+</div>
+</div></td>=20
+<td width=3D"15" style=3D"border-collapse:collapse; margin:0; padding:0; li=
+ne-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td height=3D"10" colspan=3D"3" style=3D"border-collapse:collapse; margin:0=
+; padding:0; line-height:1px; font-size:1px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table> =20
+<a href=3D
+"http://mkto-f0203.com/HJ0040O038ylzE50VxZ00H1"
+></a>
+<img src=3D"http://mkto-f0203.com/trk?t=3D1&mid=3DOTU3LUpaRS0zOTk6MTU4MzI6M=
+jA4NzE6ODQxNzk6MDoxNjU2MDo5OjMzNDY0OjEzODUxNTA6c3Rld2llNDEwQG1lLmNvbQ%3D%3D=
+" width=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"" />
+
+<div style=3D"text-align: center"> <font face=3D"Arial" size=3D1">If you no=
+ longer wish to receive these emails you may <a href=3D
+"http://mkto-f0203.com/u/M30E0O0lJz5x100AV08Z0J4"
+>unsubscribe</a> at any time.</font></div>
+</body>
+</html>
+------=_Part_734103162_1749245935.1495728022243--

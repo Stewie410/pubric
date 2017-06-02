@@ -1,0 +1,188 @@
+Delivered-To: rapaarfus139@mail.cfcc.edu
+Received: by 10.100.189.1 with SMTP id h1csp394471pjc;
+        Fri, 26 May 2017 13:40:53 -0700 (PDT)
+X-Received: by 10.202.87.76 with SMTP id l73mr1616574oib.191.1495831253671;
+        Fri, 26 May 2017 13:40:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495831253; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LIuUZaaI+G4tADQtsU9macKbtayWc3V543VQnOssyaicRWo5R6eHI5TY7dK7Ehz+S6
+         PMWq9Xld4mb2r9lc47JOuo4IlmaxmrzLtUZB+UJB/dbkSP3jHI2EC2L/2ltCXaG4/2PE
+         eOv9ZZQ08XVokXNpq1d1JDjzWqj+a3sKQY+m+WXFyEkC6Innz5QqHHtvnabDVautapqy
+         jqLJ0XCcWV+nNsqW/1djmpbP1gd1VKgF1eZpTuO3os0+WdF/Xkkk2vuV3QWvbrcC4M5x
+         5oZuL2ip+DVeAkKv22ng9OCW/62nZWfK71FvhDqh3Wc0B2W15d4oWZEl0JUjnTJaUozS
+         mkXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=aKyq4hOvZ5CCmrs/r3g9777a45+3TOLcVBYqDDDK4oU=;
+        b=W/c2XpqJIOA6wYuXQAEiWlX5J5XzHK6r3tfd7IuEiHyVIGiV8Xq2dUtSEuCR046QWU
+         ES4kIhBHpGSoKzwHNZ90EYyNfBAcnueW5cAM9cCf1MfGaLYhJBEOr7R6r3CxUrvDPg2l
+         lf+N41Tu+QozouLk9MCt+OqJTriD9yjIquA8aiT3ryfnzlfmQ8ji+ftQQE6sdkfFxHNu
+         FRj5jIeq8EdBjbmG2zCLJtDeTM8ui5kLzrMgRtoD3s6S9jgBwRTxlA/jgHZg25KccrnJ
+         b8glK578/VMxGZQukO25OztoINPQ9ftIf2fCCjYzEh55qLZgdfKFk70dLTjqLmYnvFxi
+         E5aw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::236 as permitted sender) smtp.mailfrom=klwilson67@mail.cfcc.edu
+Return-Path: <klwilson67@mail.cfcc.edu>
+Received: from mail-oi0-x236.google.com (mail-oi0-x236.google.com. [2607:f8b0:4003:c06::236])
+        by mx.google.com with ESMTPS id w81si805491oig.114.2017.05.26.13.40.53
+        for <rapaarfus139@mail.cfcc.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 26 May 2017 13:40:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::236 as permitted sender) client-ip=2607:f8b0:4003:c06::236;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::236 as permitted sender) smtp.mailfrom=klwilson67@mail.cfcc.edu
+Received: by mail-oi0-x236.google.com with SMTP id b204so26541126oii.1
+        for <rapaarfus139@mail.cfcc.edu>; Fri, 26 May 2017 13:40:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cfcc-edu.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=aKyq4hOvZ5CCmrs/r3g9777a45+3TOLcVBYqDDDK4oU=;
+        b=MPNr77yg52wLRe6xTNU4dUNhlNHGvZsq3svyv0+wloB14+4fc+Loift6rR1dwE40q3
+         zmKmDSymOPuudeoDnG6oco5/9GpnVmZ5yuxUoBNv0nO4ccIUXu+0/Lrfj+IyAnrlf0/f
+         yJCIlfe8R5tLT8UCB4xCF+tWw0GFQL4wj3wrHJcjF+Vo+pACcrROknpSp0enTPtMr8UF
+         TXjeUeefx1Jen8rWPIkA6WwvzjitVEjScj/aFoqvrRhVhVy8MGiaUQTF4YM1jR64Nsbm
+         sSTrYjVOUUbtsOE2Odpf5YZQKTiGgDCKab+h7tkRnG6AdifAQuk67FBWXYTq/r/grmeL
+         mfwA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=aKyq4hOvZ5CCmrs/r3g9777a45+3TOLcVBYqDDDK4oU=;
+        b=mWWuSFDu3pA+y3Yyq4ncZG9C1bZ4A2g/bkBytrsV75CdM7D9Kj4pGecXU0TLoF4Wok
+         3Q9eiBCYTc1dV8uOu+vkouGhK6I5YaYzS0BqPGsuwUKyB8+pGW+b4FKOs3tkVSelEApt
+         QSify9oryEVVtaWd3VNkAX96oBUO0rNcZNbGVcl+ryR1I1oSuHTWgUZojzwC/YIJ0s6D
+         SVofc6QpB+DZnxQic0cmWNSEPlMQJLtU3YoFr8OJXGfbypj7AdgJfIEEJkOtgyUDicI5
+         azaSLDkWeCAvvcyVgT9LV74TPnX3QF0U3JyzWYan7azpBryIWhJQltPIeew7DuD/5521
+         GnkQ==
+X-Gm-Message-State: AODbwcB3J1zaiGrXpGoYu7Q6DDKzX3+vX3eVqfGLYlPuLj+ys/Kut1Il
+	2IwhNJep+3cLVTctLjZjVTShPw6KLrubnas=
+X-Received: by 10.157.48.60 with SMTP id d57mr2028493otc.255.1495831253088;
+ Fri, 26 May 2017 13:40:53 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAPxSPYrFiKXaZQuKjQ_8PADbr9ptSkCevAPUF2h7=hLoUZ7jAQ@mail.gmail.com>
+ <ca0693b4-7edf-c8fd-d550-ed3850b4551f@mail.cfcc.edu>
+In-Reply-To: <ca0693b4-7edf-c8fd-d550-ed3850b4551f@mail.cfcc.edu>
+From: Keith Wilson <kwilson@cfcc.edu>
+Date: Fri, 26 May 2017 20:40:42 +0000
+Message-ID: <CAPxSPYqYi2Fz+YsTbnB3EOKLDd=WHtZuE4K8cx+mFrVNYgeDGg@mail.gmail.com>
+Subject: Re: Testing Center
+To: Richard Paarfus <rapaarfus139@mail.cfcc.edu>
+Content-Type: multipart/alternative; boundary="001a1134e17a7c21de0550735a45"
+
+--001a1134e17a7c21de0550735a45
+Content-Type: text/plain; charset="UTF-8"
+
+I would send it to you.  Several places to take tests. Do you need it
+before Tuesday?
+
+
+On Fri, May 26, 2017 at 4:37 PM Richard Paarfus <rapaarfus139@mail.cfcc.edu>
+wrote:
+
+> Okay--to use the voucher code, do I need to take the exam at the CFCC
+> testing area, or can I use it at another location.  Speaking of the voucher
+> code, will you be able to send it via email, or will I need to access it
+> from a different service (like Blackboard or CompTIA's site)?
+>
+> Alex
+>
+>
+> On 5/22/2017 1:55 PM, Keith Wilson wrote:
+>
+> The CFCC Testing Center (Union Bldg) should now be able to handle CompTiA
+> tests.
+> If they are not on the list of locations, then talk to them directly. And
+> ask politely 'Why not!".
+>
+> --
+> Keith L. Wilson   362-7177
+> Instructor, Computer Technology
+> Cape Fear Community College
+> 4500 Blue Clay Rd   Rm NB-227
+> Castle Hayne, NC  28429-6114
+>
+>
+> "Beware of Geeks bearing Grifts"
+>
+>
+> --
+
+--
+Keith L. Wilson   362-7177
+Instructor, Computer Technology
+Cape Fear Community College
+4500 Blue Clay Rd   Rm NB-227
+Castle Hayne, NC  28429-6114
+
+
+"Beware of Geeks bearing Grifts"
+
+--001a1134e17a7c21de0550735a45
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>I would send it to you.=C2=A0 Several places to take tests. Do you nee=
+d it before Tuesday?</div><div><br></div><div><br><div class=3D"gmail_quote=
+"><div>On Fri, May 26, 2017 at 4:37 PM Richard Paarfus &lt;<a href=3D"mailt=
+o:rapaarfus139@mail.cfcc.edu">rapaarfus139@mail.cfcc.edu</a>&gt; wrote:<br>=
+</div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex">
+ =20
+   =20
+ =20
+  <div>
+    Okay--to use the voucher code, do I need to take the exam at the
+    CFCC testing area, or can I use it at another location.=C2=A0 Speaking =
+of
+    the voucher code, will you be able to send it via email, or will I
+    need to access it from a different service (like Blackboard or
+    CompTIA&#39;s site)?<br>
+    <br>
+    Alex</div><div><br>
+    <br>
+    <div class=3D"m_7095903181764135265moz-cite-prefix">On 5/22/2017 1:55 P=
+M, Keith Wilson
+      wrote:<br>
+    </div>
+    <blockquote type=3D"cite">
+      <div>The CFCC Testing Center (Union Bldg) should now be
+        able to handle CompTiA tests.
+        <div>If they are not on the list of locations, then talk to them
+          directly. And ask politely &#39;Why not!&quot;.<br clear=3D"all">
+          <div>
+            <div class=3D"m_7095903181764135265gmail_signature" data-smartm=
+ail=3D"gmail_signature">
+              <div>
+                <div>
+                  <div><br>
+                  </div>
+                  <div>--</div>
+                  <div>Keith L. Wilson=C2=A0=C2=A0 362-7177<br>
+                    Instructor, Computer Technology<br>
+                    Cape Fear Community College<br>
+                    4500 Blue Clay Rd=C2=A0=C2=A0 Rm NB-227<br>
+                    Castle Hayne, NC=C2=A0 28429-6114<br>
+                    <br>
+                    <br>
+                    &quot;Beware of Geeks bearing Grifts&quot;<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </blockquote>
+    <br>
+  </div></blockquote></div></div><div dir=3D"ltr">-- <br></div><div data-sm=
+artmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><br></di=
+v><div dir=3D"ltr">--</div><div dir=3D"ltr">Keith L. Wilson=C2=A0=C2=A0 362=
+-7177<br>Instructor, Computer Technology<br>Cape Fear Community College<br>=
+4500 Blue Clay Rd=C2=A0=C2=A0 Rm NB-227<br>Castle Hayne, NC=C2=A0 28429-611=
+4<br><br><br>&quot;Beware of Geeks bearing Grifts&quot;<br></div></div></di=
+v></div>
+
+--001a1134e17a7c21de0550735a45--

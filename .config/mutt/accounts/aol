@@ -1,0 +1,25 @@
+#vim:ft=mutt
+# Example settings for legacy AOL/AIM 
+
+set imap_user = 		"user@aim.com"
+set imap_pass = 		"pass"
+set smtp_url = 			"smpt://user@smpt.aol.com:587/"
+set smtp_pass = 		"pass"
+set from = 			"user@aim.com"
+set realname = 			"Real Name"
+
+set folder = 			"imaps://imap.aol.com:993/"
+set spoolfile = 		"+INBOX"
+set record = 			/dev/null
+set postponed = 		"+[Aol]/Drafts"
+set header_cache = 		~/.config/mutt/.cache/headers
+set message_cachedir = 		~/.config/mutt/.cache/bodies
+set certificate_file = 		~/.config/mutt/.cache/certificates
+set ssl_starttls = 		yes
+set ssl_force_tls = 		yes
+
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Aol]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Aol]/Sent Mail<enter>" "Go to sent mail"
+macro index gt "<change-folder>=[Aol]/Trash<enter>" "Go to trash"
+macro index gd "<change-folder>=[Aol]/Drafts<enter>" "Go to drafts"

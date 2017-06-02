@@ -1,0 +1,37 @@
+#vim:ft=muttrc
+
+# Account Switching examples
+macro index <F2> '<sync-mailbox><enter-command>source ~/.config/mutt/accounts/gmail1<enter><change-folder>!<enter>' 'Open gmail1'
+macro index <F3> '<sync-mailbox><enter-command>source ~/.config/mutt/accounts/gmail2<enter><change-folder>!<enter>' 'Open gmail2'
+macro index <F4> '<sync-mailbox><enter-command>source ~/.config/mutt/accounts/school-gmail<enter><change-folder>!<enter>' 'Open school-gmail'
+macro index <F5> '<sync-mailbox><enter-command>source ~/.config/mutt/accounts/aol<enter><change-folder>!<enter>' 'Open aol'
+
+# Index macros
+macro index "\Cx\Cb"	"<change-folder>?"						"Folder List"
+macro index "\Cx\Cs"	"<pipe-massage>cat > ~/"					"Save message"
+macro index "\'"	"<clear-flag>r"							"Mark as un-replied"
+macro index "y"		"<sync-mailbox><change-folder>?<toggle-mailboxes>"		"Display mailboxes ( -y screen )"
+macro index "ev"	"<pipe-messages>less<enter>"					"View message in less"
+
+# Pager macros
+macro pager "w"		"<enter-command>set invsmart_wrap invmarkers<enter>"		"Toggle smart wrap stuff"
+macro pager "y"		"<sync-mailbox><change-folder>?<toggle-mailboxes>"		"Display mailboxes ( -y screen )"
+macro pager "\e1"	"<enter-command>set pager_index_lines=1<enter>"			"Change PIL Size"
+macro pager "\e2"	"<enter-command>set pager_index_lines=2<enter>"			"Change PIL Size"
+macro pager "\e3"	"<enter-command>set pager_index_lines=3<enter>"			"Change PIL Size"
+macro pager "\e4"	"<enter-command>set pager_index_lines=4<enter>"			"Change PIL Size"
+macro pager "\e5"	"<enter-command>set pager_index_lines=5<enter>"			"Change PIL Size"
+macro pager "\e6"	"<enter-command>set pager_index_lines=6<enter>"			"Change PIL Size"
+macro pager "\e7"	"<enter-command>set pager_index_lines=7<enter>"			"Change PIL Size"
+macro pager "\e8"	"<enter-command>set pager_index_lines=8<enter>"			"Change PIL Size"
+macro pager "\e9"	"<enter-command>set pager_index_lines=9<enter>"			"Change PIL Size"
+macro pager "\e0"	"<enter-command>set pager_index_lines=0<enter>"			"Change PIL Size"
+macro pager "\Cb"	"<pipe-message>urlview<enter>"					"URL Viewer"
+macro pager "\Cx\Cb"	"<change-folder>?"						"Folder list"
+macro pager "\Cx\Cs"	"<pipe-message>cat > ~/"					"Save message"
+macro pager "\ev"	"<pipe-message>less<enter>"					"View the message in less"
+
+# Provide some "online" help
+macro generic	"\e?"	"<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"	"View Manual"
+macro index	"\e?"	"<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"	"View Manual"
+macro pager	"\e?"	"<shell-escape>less /usr/local/doc/mutt/manual.txt<enter>"	"View Manual"

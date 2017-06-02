@@ -1,0 +1,107 @@
+Delivered-To: rapaarfus139@mail.cfcc.edu
+Received: by 10.31.80.199 with SMTP id e190csp806921vkb;
+        Tue, 19 Apr 2016 10:33:46 -0700 (PDT)
+X-Received: by 10.31.58.83 with SMTP id h80mr2306147vka.149.1461087226366;
+        Tue, 19 Apr 2016 10:33:46 -0700 (PDT)
+Return-Path: <wjstokes31@mail.cfcc.edu>
+Received: from mail-vk0-x235.google.com (mail-vk0-x235.google.com. [2607:f8b0:400c:c05::235])
+        by mx.google.com with ESMTPS id 99si15398679uak.31.2016.04.19.10.33.46
+        for <rapaarfus139@mail.cfcc.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 19 Apr 2016 10:33:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of wjstokes31@mail.cfcc.edu designates 2607:f8b0:400c:c05::235 as permitted sender) client-ip=2607:f8b0:400c:c05::235;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of wjstokes31@mail.cfcc.edu designates 2607:f8b0:400c:c05::235 as permitted sender) smtp.mailfrom=wjstokes31@mail.cfcc.edu
+Received: by mail-vk0-x235.google.com with SMTP id t129so28290184vkg.2
+        for <rapaarfus139@mail.cfcc.edu>; Tue, 19 Apr 2016 10:33:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cfcc-edu.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=YswCtCCEMaAz8NEQ3YGr+gRL2TZCMpWrBGpi6eV2uX8=;
+        b=o8QGnM862dcvxq5cvnlIhzlrEMqM11CoYAWg4RBEGeEoH/7USs55wAc8fOTv0XOzRj
+         nNcteAWOfh2Ya2sFAYe5AxNAVguYLVWE8p9vSRNzJbg+NEADjXDcnFvwrsToACKVLL9A
+         Y1Jk0yMXMAop81ehWMrOZKYuEkNpi7wVVq3Ddv761L0OJOLoyfddLJcvRBbSgmnZ0zQ2
+         jqf3MkbyVrZAFpvr7yizwSRvcWwajBuxh7ElbvFZ6Bk1uoe5MxetX/R2ZWqxUqOEec1f
+         iH9h4p6a4N59MflxTPqEu5N+cy+8QllyH2RxLcIiN5yGNqTQp0gRnALFfFoi0ng4L4uN
+         YGUQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=YswCtCCEMaAz8NEQ3YGr+gRL2TZCMpWrBGpi6eV2uX8=;
+        b=YQQO9BphVLvrsEIR55LeCpoPdGeq/zokwdTmPH4kfH8MtI9I7v5ymkR9PnB01D3vkh
+         8zLgRZjST2zJFwDRjerwZuZaMUYtmsIrugy2QCEuzYxHhGoFIKBVu3bbO0bUdmz4WoiH
+         MQjuO5ZojJ3t5NXWMuvZoGZcgG69GNkkO0CRmFWr5CnpVn8WT8ONAQxdPMxQh3Y6w7Gv
+         jLlALHlJ6Q7mgIlt31bGoz3AS/5hOIO8F54rzSCUOpDybqbSNUkxk+wEUvg0Ig7jxjUp
+         1SnzR0ha8NWMKVh74ERqfLnO4DzBn7/EkLZoxHc9HMwVvXBRAz/FM+0sl+mzAUycWFud
+         5nbw==
+X-Gm-Message-State: AOPr4FUup4U2Dya5sei7ScaNwGD7DndbVuReV7KYqAhZ/G1BEkbYQOsAnMZWR6IjaYHmkjPSVP92R0zP+K2V/X1Ba4A=
+X-Received: by 10.31.134.71 with SMTP id i68mr2266570vkd.46.1461087225944;
+ Tue, 19 Apr 2016 10:33:45 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.47.70 with HTTP; Tue, 19 Apr 2016 10:33:26 -0700 (PDT)
+From: Joe Stokes <jstokes@cfcc.edu>
+Date: Tue, 19 Apr 2016 13:33:26 -0400
+Message-ID: <CAOca7SzSLoO0dVibdZEV76nm1mcchSsUUzR3+mVQ1wuPt4sd0Q@mail.gmail.com>
+Subject: Pi
+To: Richard Paarfus <rapaarfus139@mail.cfcc.edu>
+Content-Type: multipart/alternative; boundary=001a11458eb416babe0530d9e1e9
+
+--001a11458eb416babe0530d9e1e9
+Content-Type: text/plain; charset=UTF-8
+
+Alex, I am happy I could expose you to another way of looking at pi with
+tau. It has been a while since I looked at it, and seems it was the
+definition of tau that was the main thing for me. It may be a bad term for
+cross-over into electricity, or maybe I am missing something. I really do
+not recall how they defined tau offhand, as that was last semester. Seems
+it was an interesting read, but I recall it did not help with what I was
+looking for.
+
+I found the anti-pi movement while looking for a better explanation of
+Inductive tau (tau = L/R) versus Capacitive tau (tau = R*C). While the
+anti-pi was interesting, my memory is that it went against the time
+constant application, but maybe I need to look closer.
+
+In any event, I will try to look at it again prior to Wednesday class. I
+look forward to hearing your thoughts. --Joe
+
+
+
+
+
+Joe Stokes
+Electronics Instructor
+Electronics Engineering Technology
+Cape Fear Community College
+4500 Blue Clay Road
+Castle Hayne, NC 28429
+(910) 362-7285
+jstokes@cfcc.edu
+
+--001a11458eb416babe0530d9e1e9
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Alex, I am happy I could expose you to another way of=
+ looking at pi with tau. It has been a while since I looked at it, and seem=
+s it was the definition of tau that was the main thing for me. It may be a =
+bad term for cross-over into electricity, or maybe I am missing something. =
+I really do not recall how they defined tau offhand, as that was last semes=
+ter. Seems it was an interesting read, but I recall it did not help with wh=
+at I was looking for.</div><div><br></div><div>I found the anti-pi movement=
+ while looking for a better explanation of Inductive tau (tau =3D L/R) vers=
+us Capacitive tau (tau =3D R*C). While the anti-pi was interesting, my memo=
+ry is that it went against the time constant application, but maybe I need =
+to look closer. =C2=A0</div><div><br></div><div>In any event, I will try to=
+ look at it again prior to Wednesday class. I look forward to hearing your =
+thoughts. --Joe</div><div><br></div><div><br></div><div><br></div><div><br>=
+</div><br clear=3D"all"><div><div class=3D"gmail_signature"><div dir=3D"ltr=
+"><div>Joe Stokes</div><div>Electronics Instructor</div><div>Electronics En=
+gineering Technology</div><div>Cape Fear Community College</div><div>4500 B=
+lue Clay Road</div><div>Castle Hayne, NC 28429</div><div>(910) 362-7285</di=
+v><div><a href=3D"mailto:jstokes@cfcc.edu" target=3D"_blank">jstokes@cfcc.e=
+du</a></div></div></div></div>
+</div>
+
+--001a11458eb416babe0530d9e1e9--

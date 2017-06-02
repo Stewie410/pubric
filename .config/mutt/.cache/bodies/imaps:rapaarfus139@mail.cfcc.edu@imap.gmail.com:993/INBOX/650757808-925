@@ -1,0 +1,108 @@
+Delivered-To: rapaarfus139@mail.cfcc.edu
+Received: by 10.100.189.1 with SMTP id h1csp1576558pjc;
+        Mon, 22 May 2017 10:56:20 -0700 (PDT)
+X-Received: by 10.157.29.162 with SMTP id y31mr5771244otd.22.1495475780031;
+        Mon, 22 May 2017 10:56:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1495475780; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UXLYOGSNjCuiMmedictMPJUQ6OHJuEO7UjLwrIhmtKWSR5wb1brLVyQRpo2qBV3ohG
+         NyOaQ2f0oXBmvbYL88lppTvotMZzV6IPyvfQpW+5LEzp2xYS7dHEZzK2hpMQXTUqG1Vn
+         KloewaRGoDPkiYTDcF513Hamgb5MA7bsKW4a1rAcwt+twQE9H29pnj0GjpscmO+HDnAj
+         PSCq26lk8VQ7Gi8cSFcOjSYpPg7u1LBZd6KgdpLGaHmADLAT/90XchXJ1Lv7+WiP5PT0
+         hV5Voj4dgPPqk0VMzGcuqghIKgkaIj9NB6mP3weyhFSSGnPPTM+zlEfi7iMDlTaqRvNK
+         UonQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature
+         :arc-authentication-results;
+        bh=hqG7cTeOBnkxNoAXQjuGkV1L410fmR8e6B54n4N2T50=;
+        b=gYqfuqMbuceRPhw4BKD0oCG2/0kaj4K+nNeEDq/thH1VFB6gi0WFfVI5JHwRhh95Gi
+         Af1IFVmm2Ynzy1fzzjHzZOj7UNdNNr1YQkC04CtKaXWFmvP5HeJerODJGMKsXJZ6j0Z+
+         U5Mro9NtIAvqL/HSbstvgyWSVovHQn5Uj5nfEIVG7L4HudT5JtK0t+yYts43f+yktQV9
+         W4MlIjy5vjuv4FtIGOrGa93OXEQD8w8EQfSjRQH3XP7W3IZ6i4PHU8YBTHUN5+uW5Vi1
+         WlUwIc/2ojlP/CRcqfs87mqmH+IbPstYOLP/GFHiocPpDE9crSv4obyR6SW3sCtyPOGm
+         i2Ow==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::22a as permitted sender) smtp.mailfrom=klwilson67@mail.cfcc.edu
+Return-Path: <klwilson67@mail.cfcc.edu>
+Received: from mail-oi0-x22a.google.com (mail-oi0-x22a.google.com. [2607:f8b0:4003:c06::22a])
+        by mx.google.com with ESMTPS id 63si7353658otp.158.2017.05.22.10.56.19
+        for <rapaarfus139@mail.cfcc.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 22 May 2017 10:56:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::22a as permitted sender) client-ip=2607:f8b0:4003:c06::22a;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cfcc-edu.20150623.gappssmtp.com;
+       spf=pass (google.com: domain of klwilson67@mail.cfcc.edu designates 2607:f8b0:4003:c06::22a as permitted sender) smtp.mailfrom=klwilson67@mail.cfcc.edu
+Received: by mail-oi0-x22a.google.com with SMTP id h4so171241250oib.3
+        for <rapaarfus139@mail.cfcc.edu>; Mon, 22 May 2017 10:56:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cfcc-edu.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=hqG7cTeOBnkxNoAXQjuGkV1L410fmR8e6B54n4N2T50=;
+        b=cu97nYtO2dT8OGG9p5ximl/2l+1mBA9n/52p2FLTvipoh1LlaIL4cueJjwGxiZaBXg
+         /FXKM70TLFzgAKl95F9PVtIMpmi+dVYx6KiMTVR2zH2Sz4gho1mAvmv+Ds4Gbo3BGRQx
+         e+ZnN+z3aUkCIcjrMXMZ3RJkekxEvPanraui6DA4loHTmPGC6kXgPT51JDKB4f2i2o7N
+         Lj6zf6j7lHGH5hfREdbDM9yPgRMbvX16K8ttQ7Mq6IP153ETISbmtFNKDqDKmICR+MK5
+         vr24cZjUmq0tnP8gXpVrQZ5JetZ+PDAq/FIcpcf1b+Urf+D5uI2r/M+K2SEr9eY9H/yT
+         LpRA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=hqG7cTeOBnkxNoAXQjuGkV1L410fmR8e6B54n4N2T50=;
+        b=nD3Im57mHbLBAt88yhDt4JPD7PobrmjDnMnSZUa7Yb8mU54+ntvWVVIyZaOg3h04+n
+         bqaTa7HU9QbnNIt/1iKbuuT+Au3EdSMskXh5pBxnzCAdP90RBWyKJGLXFjqIzlY36DMk
+         h1S5BJ9iYvPECJCoyrTkBjDgADkmyVlK1r753J2SO2koUhy2qcVk/G2yEZNpK5BLNitL
+         nJaElPPnxDoL3RlBcSGXDBSii1oBJnBIEs2aCMnbQbJs2HRGJXz6NxmSpCCBseS4270p
+         70bcKhsHapHfoqB9eHdyQmYH+oHogpW3yW/LDHETUkLrK0ExW9D3ZsSTyn1wQIZC5pY3
+         LIaA==
+X-Gm-Message-State: AODbwcDXWTYk156zf7Ykjb2dQNG95pIrFax89EyoA5qAoZLujTEBTWRT
+	zLPdEnyhXbZKYJmaz8TnPQ+y2GqwN3nqO6Y=
+X-Received: by 10.157.20.251 with SMTP id r56mr12446145otr.55.1495475779523;
+ Mon, 22 May 2017 10:56:19 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.74.128.8 with HTTP; Mon, 22 May 2017 10:55:58 -0700 (PDT)
+From: Keith Wilson <kwilson@cfcc.edu>
+Date: Mon, 22 May 2017 13:55:58 -0400
+Message-ID: <CAPxSPYrFiKXaZQuKjQ_8PADbr9ptSkCevAPUF2h7=hLoUZ7jAQ@mail.gmail.com>
+Subject: Testing Center
+To: Marcin Paszkowski <mpaszkowski375@mail.cfcc.edu>, 
+	Maya Quattlebaum <maquattlebaum946@mail.cfcc.edu>, 
+	Richard Paarfus <rapaarfus139@mail.cfcc.edu>, Brooke Stanley <bastanley325@mail.cfcc.edu>, 
+	Tracy Hargett <tmhargett859@mail.cfcc.edu>
+Content-Type: multipart/alternative; boundary="001a113524cc9bf6380550209635"
+
+--001a113524cc9bf6380550209635
+Content-Type: text/plain; charset="UTF-8"
+
+The CFCC Testing Center (Union Bldg) should now be able to handle CompTiA
+tests.
+If they are not on the list of locations, then talk to them directly. And
+ask politely 'Why not!".
+
+--
+Keith L. Wilson   362-7177
+Instructor, Computer Technology
+Cape Fear Community College
+4500 Blue Clay Rd   Rm NB-227
+Castle Hayne, NC  28429-6114
+
+
+"Beware of Geeks bearing Grifts"
+
+--001a113524cc9bf6380550209635
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">The CFCC Testing Center (Union Bldg) should now be able to=
+ handle CompTiA tests.<div>If they are not on the list of locations, then t=
+alk to them directly. And ask politely &#39;Why not!&quot;.<br clear=3D"all=
+"><div><div class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><d=
+iv dir=3D"ltr"><div><div dir=3D"ltr"><br></div><div dir=3D"ltr">--</div><di=
+v dir=3D"ltr">Keith L. Wilson=C2=A0=C2=A0 362-7177<br>Instructor, Computer =
+Technology<br>Cape Fear Community College<br>4500 Blue Clay Rd=C2=A0=C2=A0 =
+Rm NB-227<br>Castle Hayne, NC=C2=A0 28429-6114<br><br><br>&quot;Beware of G=
+eeks bearing Grifts&quot;<br></div></div></div></div></div>
+</div></div>
+
+--001a113524cc9bf6380550209635--

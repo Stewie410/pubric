@@ -1,0 +1,262 @@
+# i3 config file
+# written by: Stewie410 <Stewie410@me.com>
+# TODO
+# 	<Autostart all applications in a script?: ~/.scripts/i3/autostart2.sh>
+
+
+# Autostart
+# Stop auto-started applications
+#exec --no-startup-id source ~/.scripts/i3/autostop.sh
+
+# Autostart applications
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id xautolock -time 15 -locker /bin/lock
+exec --no-startup-id unclutter
+exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
+
+# Autostart scripts
+exec_always --no-startup-id source ~/.scripts/tools/touchpad.sh
+exec_always --no-startup-id source ~/.fehbg
+exec_always --no-startup-id source ~/.config/polybar/launch.sh
+#exec_always --no-startup-id source ~/.scripts/tools/redshift_start.sh
+
+
+# Set all vars
+# i3wm vars
+set $mod Mod4
+set $ws1 1:
+set $ws2 2:
+set $ws3 3:
+set $ws4 4:
+set $ws5 5:
+set $ws6 6:
+set $ws7 7:
+set $ws8 8:
+set $ws9 9:
+set $ws10 10:
+
+# My vars
+set $screencast source ~/.scripts/i3/screencast.sh
+set $audio source ~/.scripts/i3/audio.sh
+set $term termite
+set $browser vivaldi-stable
+set $scrot source ~/.scripts/tools/autoscrot.sh
+set $email termite --name=Mutt -e mutt & 
+
+# i3-gaps vars
+set $mode_gaps Gaps: (o) outer (i) inner
+set $mode_gaps_outer Outer Gaps: (Shift) +,-,0 local (global)
+set $mode_gaps_inner Inner Gaps: (Shift) +,-,0 local (global)
+set $igchange 5
+set $ogchange 5
+
+
+# i3wm settings
+# Font used for Window Titles and i3status, i3blocks, and other bars defined in bar{}
+font pango:Hack 14px
+#font pango:DejaVu Sans Mono 8
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Force floating mode
+for_window [class="Gufw.py"] 			floating enable;
+for_window [class="Clamtk"]			floating enable;
+for_window [class="Keepassx2"]			floating enable;
+for_window [title="Crack Attack!"]		floating enable;
+for_window [title="Thunderbird Preferences"]	floating enable;
+
+# Focus follows your mouse
+focus_follows_mouse no
+
+# Settings for i3-gaps
+gaps inner 8
+gaps outer 5
+
+#smart_gaps on
+#smart_borders on
+for_window [class=^.*] border pixel 1
+new_window 1pixel
+#hide_edge_borders both
+mode "$mode_gaps" {
+	bindsym o			mode "$mode_gaps_outer"
+	bindsym i			mode "$mode_gaps_inner"
+	bindsym Return			mode "default"
+	bindsym Escape			mode "default"
+}
+mode "$mode_gaps_inner" {
+	bindsym KP_Add			gaps inner current plus $igchange
+	bindsym KP_Subtract		gaps inner current minus $igchange
+	bindsym KP_0			gaps inner current set 0
+
+	bindsym Shift+KP_Add		gaps inner all plus $igchange
+	bindsym Shift+KP_Subtract	gaps inner all minus $igchange
+	bindsym Shift+KP_0		gaps inner all set 0
+
+	bindsym Return			mode "default"
+	bindsym Escape			mode "default"
+}
+mode "$mode_gaps_outer" {
+	bindsym KP_Add			gaps outer current plus $ogchange
+	bindsym KP_Subtract		gaps outer current minus $ogchange
+	bindsym KP_0			gaps outer current set 0
+
+	bindsym Shift+KP_Add		gaps outer all plus $ogchange
+	bindsym Shift+KP_Subtract	gaps outer all minus $ogchange
+	bindsym Shift+0			gaps outer all set 0
+
+	bindsym Return			mode "default"
+	bindsym Escape			mode "default"
+}
+
+# Assign specific applications to specific workspaces
+for_window [class="Firefox"] 			move to workspace 2
+for_window [class="Vivaldi-stable"]		move to workspace 2
+for_window [class="Atom"] 			move to workspace 5
+for_window [class="Eclipse"]			move to workspace 5
+for_window [class="Keepassx2"]			move to workspace 6
+for_window [class="Clamtk"]			move to workspace 6
+for_window [class="Gufw.py"]			move to workspace 6
+for_window [class="TeamSpeak 3"]		move to workspace 7
+for_window [class="Franz"]			move to workspace 7
+for_window [class="Messenger for Desktop"]	move to workspace 7
+for_window [class="Thunar"]			move to workspace 8
+for_window [class="Thunderbird"]		move to workspace 9
+for_window [class="Termite" instance="Mutt"]	move to workspace 9
+for_window [class="Spotify"] 			move to workspace 10
+for_window [class="Deadbeef"] 			move to workspace 10
+
+
+# Keybindings
+
+# i3wm bindings
+# Change focus
+bindsym $mod+j 				focus left
+bindsym $mod+k 				focus down
+bindsym $mod+l 				focus up
+bindsym $mod+semicolon 			focus right
+bindsym $mod+Left			focus left
+bindsym $mod+Down			focus down
+bindsym $mod+Up				focus up
+bindsym $mod+Right			focus right
+
+# Move focused window
+bindsym $mod+Shift+j			move left
+bindsym $mod+Shift+k			move down
+bindsym $mod+Shift+l			move up
+bindsym $mod+Shift+semicolon		move right
+bindsym $mod+Shift+Left			move left
+bindsym $mod+Shift+Down			move down
+bindsym $mod+Shift+Up			move up
+bindsym $mod+Shift+Right		move right
+
+# Split type
+bindsym $mod+h				split h
+bindsym $mod+v				split v
+
+# Container Layout & Fullscreen
+bindsym $mod+s				layout stacking
+bindsym $mod+w				layout tabbed
+bindsym $mod+e				layout split
+bindsym $mod+f				fullscreen toggle
+
+# Toggle Tiling/floating, and switch between them
+bindsym $mod+space			focus mode_toggle
+bindsym $mod+Shift+space		floating toggle
+
+# Focus the parent/child container
+bindsym $mod+a 				focus parent
+#bindsym $mod+d				focus parent
+
+# Kill focused window
+bindsym $mod+Shift+q			kill
+
+# Show scratchpad
+bindsym $mod+KP_Enter			scratchpad show
+bindsym $mod+Shift+KP_Enter		move scratchpad
+
+# Workspace swap & Move focus to a workspace
+bindsym $mod+1				workspace 1
+bindsym $mod+2				workspace 2
+bindsym $mod+3				workspace 3
+bindsym $mod+4				workspace 4
+bindsym $mod+5				workspace 5
+bindsym $mod+6				workspace 6
+bindsym $mod+7				workspace 7
+bindsym $mod+8				workspace 8
+bindsym $mod+9				workspace 9
+bindsym $mod+0				workspace 10
+bindsym $mod+Shift+1			move container to workspace 1
+bindsym $mod+Shift+2			move container to workspace 2
+bindsym $mod+Shift+3			move container to workspace 3
+bindsym $mod+Shift+4			move container to workspace 4
+bindsym $mod+Shift+5			move container to workspace 5
+bindsym $mod+Shift+6			move container to workspace 6
+bindsym $mod+Shift+7			move container to workspace 7
+bindsym $mod+Shift+8			move container to workspace 8
+bindsym $mod+Shift+9			move container to workspace 9
+bindsym $mod+Shift+0			move container to workspace 10
+bindsym $mod+Tab			workspace back_and_forth
+
+# Resize Mode
+bindsym $mod+r 				mode "resize"
+mode "resize" {
+	bindsym j			resize shrink width 10 px or 10 ppt
+	bindsym k			resize grow height 10 px or 10 ppt
+	bindsym l			resize shrink height 10 px or 10 ppt
+	bindsym semicolon		resize grow width 10 px or 10 ppt
+	bindsym Left			resize shrink width 10 px or 10 ppt
+	bindsym Down			resize grow height 10 px or 10 ppt
+	bindsym Up			resize shrink height 10 px or 10 ppt
+	bindsym Right			resize grow width 10 px or 10 ppt
+	bindsym Return			mode "default"
+	bindsym Escape			mode "default"
+}
+
+# i3 Session control: reload, restart, lock & exit
+bindsym $mod+Shift+c			reload
+bindsym $mod+Shift+r			restart
+bindsym $mod+Shift+Escape		exec i3-msg exit
+bindsym $mod+Shift+F1			exec /bin/lock
+
+
+# Other Key Bindings
+# Audio Controls
+bindsym XF86AudioRaiseVolume 		exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume 		exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute			exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioPlay 			exec --no-startup-id playerctl play-pause
+
+# Screen Brightness
+bindsym $mod+F6				exec --no-startup-id light -s acpi_video0 -U 5
+bindsym $mod+F7				exec --no-startup-id light -s acpi_video0 -A 5
+bindsym $mod+Shift+F6			exec --no-startup-id light -s acpi_video0 -S 0
+bindsym $mod+Shift+F7			exec --no-startup-id light -s acpi_video0 -S 100
+
+# Program execution
+# Launcher
+bindsym $mod+d				exec rofi -show run
+bindsym $mod+Shift+d			exec dmenu_run
+bindsym $mod+c				exec rofi -show drun
+
+# Terminal
+bindsym $mod+Return			exec $term
+bindsym $mod+Shift+Return		exec $term -e tmux
+
+# Web Browsers
+bindsym $mod+F2				exec qutebrowser
+bindsym $mod+Shift+F2			exec $browser
+
+# Email Client
+bindsym $mod+F3				exec $email
+bindsym $mod+Shift+F3			exec thunderbird 
+
+# File Browser
+bindsym $mod+F4				exec $term -e ranger
+bindsym $mod+Shift+F4			exec thunar
+
+# Scrot
+bindsym $mod+End			exec $scrot
+
+# KeePassX2
+bindsym $mod+F1				exec keepassx2 ~/.config/keepassx/dbs/InitialDB.kdbx

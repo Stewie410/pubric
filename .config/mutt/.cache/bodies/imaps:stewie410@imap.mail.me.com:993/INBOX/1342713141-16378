@@ -1,0 +1,460 @@
+Return-path: <bounce@mailmanager.net>
+Received: from pv33p00im-smtpin006.me.com ([17.142.194.145])
+ by ms25561.mac.com (Oracle Communications Messaging Server 7.0.5.38.0 64bit
+ (built Aug  1 2016)) with ESMTP id <0OQK00HRF77OV8C0@ms25561.mac.com> for
+ Stewie410@me.com; Fri, 26 May 2017 12:11:48 +0000 (GMT)
+Original-recipient: rfc822;Stewie410@me.com
+Received: from outbound.mailmanager.net
+ (outbound.mailmanager.net [63.251.90.36]) by pv33p00im-smtpin006.me.com
+ (Oracle Communications Messaging Server 7.0.5.38.0 64bit (built Feb 26 2016))
+ with ESMTP id <0OQK00IPM6V73K50@pv33p00im-smtpin006.me.com> for
+ Stewie410@me.com (ORCPT Stewie410@me.com); Fri,
+ 26 May 2017 12:11:48 +0000 (GMT)
+Authentication-results: pv33p00im-dmarcmilter010.me.com; dmarc=none
+ header.from=casaa.org
+Authentication-results: pv33p00im-spfmilter007.me.com; spf=pass
+ (pv33p00im-spfmilter007.me.com: domain of bounce@mailmanager.net designates
+ 63.251.90.36 as permitted sender) smtp.mailfrom=bounce@mailmanager.net;
+Received-SPF: pass (pv33p00im-spfmilter007.me.com: domain of
+ bounce@mailmanager.net designates 63.251.90.36 as permitted sender)
+ receiver=pv33p00im-spfmilter007.me.com; client-ip=63.251.90.36;
+ helo=outbound.mailmanager.net; envelope-from=bounce@mailmanager.net;
+Authentication-results: pv33p00im-dkimmilter017.me.com; dkim=none
+	reason="no signature"; dkim-adsp=none
+Received: from mail.mailmanager.net (192.168.1.82) by outbound.mailmanager.net
+ id h50do4258io0 for <Stewie410@me.com>; Fri,
+ 26 May 2017 08:08:29 -0400 (envelope-from <bounce@mailmanager.net>)
+From: CASAA <takeaction@casaa.org>
+Reply-to: takeaction@casaa.org
+To: stewie410@me.com
+Message-id:
+ <310172657.40070091495800510904.JavaMail.cqolmstr@acw-pxb06.capwiz.com>
+Subject: Delay the FDA! Post your comment on the Citizen Petition on
+ Regulations.gov!
+MIME-version: 1.0
+Content-type: text/html; charset=UTF-8
+Content-transfer-encoding: quoted-printable
+Date: Fri, 26 May 2017 08:08:29 -0400
+x-icloud-spam-score: 3111331
+ f=casaa.org;e=mailmanager.net;is=yes;ir=no;spf=pass;dkim=none;dmarc=absent/(noPolicy);gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=145 suspectscore=66 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1701120000 definitions=main-1705260223
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2017-05-26_07:,, signatures=0
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: 145
+X-CLX-Score: 145
+X-CLX-Shades: None
+X-MANTSH: 1TEIXWlwZHFoaGkNHB0tNT0ReQ0QeHxsbEQpMQxcbHQQbHhgEGxMfBBkYEBseGh8
+ aEQpMWRcbHh8RCllNF2RFRE8RCllJFxpxGhAadwYbGB9xHxMdEBkZdwYYGgYaEQpZXhdobnkRC
+ kNOF0YFGhtaX21+E1NZWV5wE2ZfeXoaGhwaf114fXJccFJlEQpYXBcZBBoEGRsHTRIdGBIZHRk
+ FGx0EGx4YBBsTEwQbGhgQGx4aHxoRCl5ZF3tySWtPEQpNXBcbHBgRCkxaF3ttTU1NEQpFWRdvE
+ QpMXxd6BQUFBQUFBQUFQxEKQ1oXHBkEGB8bBBMaBBkcEQpCXhcbEQpCRRdvbWZmW35fZklTUhE
+ KQk4XYW1sa3AeZnoBZBIRCkJMF2JsXk1wYR4BTkJ/EQpCbBdjaB9CWRhEZkxHQhEKQkAXZk9wT
+ mUYeFtSaBwRCkJYF2FnQRkaZHhFG0JGEQpCeBd6W2hPbHhpGG9yQhEKTV4XGxEKcGgXelxZQXh
+ aZURcfk8QGRoRCnBoF2NcXEhbQ3NcckZsEB0ZEQpwaBduEnhuYkJQa3BMHxAZGhEKcGgXYgUZQ
+ VBkSX9NTBgQGRoRCnBoF2ZIX3llfEsbH3sTEBoRCnB/F2x/TxJdRn15XXtlEBwbEQpwXxdsfll
+ bW3lnZ015GBAZGhEKcH0XbHkfTx9CHxJsbXgQGRoRCnB/F2lBX29wT09pAWt4EBwYEQpwXxdvY
+ H8feWlfWXJpHhAZGhEKcH0XYXJsXkxMQxlFYVwQGhEKcH0Xa2cZE3NmQm9sT2EQGhEKcH0XaB1
+ iAXl8ZkZ/SEUQGhEKcH0XaGt4Q19Teh5ASWkQGhEKcH0XZmhcRUl9b0tuZX8QGhEKcH0XbR5FU
+ hxFUHxJYHAQGhEKcGwXYUkYc2YTTW9aQ0MQGRoRCm1+FxsRClhNF0sR
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-PhxAddresseeId: 521439457
+X-PhxdbId: 2920
+X-PhxedId: 307164
+X-PhxEnv: PROD
+X-PhxtoOrig: Stewie410@me.com
+
+<body>
+  <font face=3D"Arial, Helvetica, sans-serif" size=3D"1">
+=09
+=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cente=
+r" id=3D"simple-mail">
+      <tr>
+=09      <td>
+=09=09=09<table width=3D"560" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" align=3D"center" bgcolor=3D"#ffffff" style=3D"text-align: center; borde=
+r-bottom-color: #BBB; border-left-width: 1px; border-bottom-width: 1px; bor=
+der-right-width: 1px; border-top-width: 1px; border-left-style: solid; bord=
+er-bottom-style: solid; border-top-color: #BBB; border-right-color: #BBB; b=
+order-right-style: solid; border-top-style: solid; border-left-color: #BBB;=
+ font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666; p=
+adding:10px;">
+=09            <tr><td align=3D"left" valign=3D"top" width=3D"560" style=3D=
+"width:560px; text-align:left;"><p><p style=3D"text-align: center;"><img sr=
+c=3D"https://cqrcengage.com/casaa/file/NI4MWovZRTX/CASAA 800x800.png" style=
+=3D"height: 150px; width: 150px;" /></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; font-weight: 700; vertical-align: baseline; white-s=
+pace: pre-wrap;">A Citizen Petition has been submitted</span><span style=3D=
+"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color=
+: transparent; vertical-align: baseline; white-space: pre-wrap;"> to the Fo=
+od and Drug Administration (FDA) requesting that the agency issue "final gu=
+idance or regulations describing the recommended or required contents of pr=
+emarket submissions..." In addition to requesting this </span><span style=
+=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-co=
+lor: transparent; font-weight: 700; vertical-align: baseline; white-space: =
+pre-wrap;">final guidance</span><span style=3D"font-size: 11pt; font-family=
+: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align=
+: baseline; white-space: pre-wrap;">, petitioners (NJOY et. al.) are reques=
+ting that the compliance period be extended by 24 months </span><span style=
+=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-co=
+lor: transparent; font-weight: 700; vertical-align: baseline; white-space: =
+pre-wrap;">from the time the guidance is published.</span><span style=3D"fo=
+nt-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: t=
+ransparent; vertical-align: baseline; white-space: pre-wrap;"> Such a delay=
+ is necessary in order for manufacturers to complete the required premarket=
+ tobacco application (PMTA) process.</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; vertical-align: baseline; white-space: pre-wrap;">(=
+</span><span style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0,=
+ 0); background-color: transparent; font-style: italic; vertical-align: bas=
+eline; white-space: pre-wrap;">If you are writing on behalf of a business, =
+please use the </span><a href=3D"http://cqrcengage.com/casaa/app/thru?ep=3D=
+AAAAC2Flc0NpcGhlcjAxx6CRRSAphqw-kCcBqP50Tt74mKNqAD4d094WnoD3rBs428IUCnlAkQL=
+syBhUJoQ0d-qa9MokzOgjs0VgjJxttSnTwKy7fU6i2aaJMPfECJL-Thl2Auo9tHHu0hn8DJMQ1G=
+HnCoz_7irLXMiuoAROXQDWRvr-Q4JWvYH_xyQxhdJNx8jTr9c_6SfB7mxR5KV9lWjIKX3XVeDHU=
+NuG2Km0cQ&lp=3D0" style=3D"text-decoration-line: none;"><span style=3D"font=
+-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color:=
+ transparent; font-style: italic; text-decoration-line: underline; vertical=
+-align: baseline; white-space: pre-wrap;">industry engagement here</span></=
+a><span style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); =
+background-color: transparent; vertical-align: baseline; white-space: pre-w=
+rap;">)</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; vertical-align: baseline; white-space: pre-wrap;">C=
+urrently, there is no clear-cut path through the PMTA process; it is an exp=
+ensive hit-or-miss process. Manufacturers submitting PMTA's must rely on th=
+e successes or failures of previous applications for guidance and make assu=
+mptions about what the agency will consider as supporting evidence. As it s=
+tands, less than 1% of the vapor industry can afford to try and the overwhe=
+lming majority of the industry will not even make an attempt.</span></span>=
+</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;t=
+ext-align: center;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-=
+edd40086756c"><span style=3D"font-size: 14pt; font-family: Arial; color: rg=
+b(0, 0, 0); background-color: transparent; font-weight: 700; vertical-align=
+: baseline; white-space: pre-wrap;">THIS IS NOT YOUR AVERAGE PETITION!!!</s=
+pan></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;t=
+ext-align: center;">&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><a hr=
+ef=3D"http://cqrcengage.com/casaa/app/thru?ep=3DAAAAC2Flc0NpcGhlcjAxkdv6A-j=
+g2vEogvszzVfg9KayQ8vJ_vFT2Zn9eAtgFEqidNNh4PoFeBGNehtQsfOOMMedflonwbhWNtCC_J=
+gCPu4w8eOZWXi5-QX3W-fUmOM2kMZ117OVbYWNNpdkYD15yz0Auen-uc9wGPuMZUTGgdH3WbEOg=
+O0tZtDm5BzMyjInUk_ZdvQeRTzvhQEFDreSbApsVCB3e2ndmKLh0P3zVw&lp=3D0" style=3D"=
+text-decoration-line: none;"><span style=3D"font-size: 11pt; font-family: A=
+rial; color: rgb(17, 85, 204); background-color: transparent; text-decorati=
+on-line: underline; vertical-align: baseline; white-space: pre-wrap;">21 CF=
+R &#167;10.30</span></a><span style=3D"font-size: 11pt; font-family: Arial;=
+ color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseli=
+ne; white-space: pre-wrap;"> establishes the Citizen Petition as a legitima=
+te pathway to affect changes in regulations after the official public comme=
+nt period has closed. CASAA is asking our members to post comments in suppo=
+rt of this petition on the official docket at Regulations.gov. </span><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; font-weight: 700; vertical-align: baseline; white-s=
+pace: pre-wrap;">Comments must be submitted by November 8th, 2017, 11:59 PM=
+ (EST)</span><span style=3D"font-size: 11pt; font-family: Arial; color: rgb=
+(0, 0, 0); background-color: transparent; vertical-align: baseline; white-s=
+pace: pre-wrap;">.</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;t=
+ext-align: center;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-=
+edd40086756c"><span style=3D"font-size: 18pt; font-family: Arial; color: rg=
+b(0, 0, 0); background-color: transparent; font-weight: 700; vertical-align=
+: baseline; white-space: pre-wrap;">Take Action - </span><a href=3D"http://=
+cqrcengage.com/casaa/app/thru?ep=3DAAAAC2Flc0NpcGhlcjAxfXWykBgZepKFHODyY4-d=
+zBeeT9UPtp6OgqKGfmElgxDLm_yRXOqCwpKpEAe9FAKd3XmK1RuGJT7EUP4FoD2Rh7g1dKhd9TL=
+u16S5-wtmH0Y8EE36Bgw0l1ndvpYKclpHzxSQfb3889LRtGzFKqSNSiZxJvTGuv0nO5sMCbpTUU=
+HSSF0jz0xQnKgtx3WNikrDrSPy5nLgh6B_UrMcxumgDA&lp=3D0" style=3D"text-decorati=
+on-line: none;"><span style=3D"font-size: 18pt; font-family: Arial; color: =
+rgb(17, 85, 204); background-color: rgb(0, 255, 0); font-weight: 700; text-=
+decoration-line: underline; vertical-align: baseline; white-space: pre-wrap=
+;">Post Your Comment</span></a><span style=3D"font-size: 18pt; font-family:=
+ Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: 70=
+0; vertical-align: baseline; white-space: pre-wrap;">!</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;t=
+ext-align: center;">&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; vertical-align: baseline; white-space: pre-wrap;">(=
+</span><span style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0,=
+ 0); background-color: transparent; font-style: italic; vertical-align: bas=
+eline; white-space: pre-wrap;">If you are writing on behalf of a business, =
+please use the </span><strong><a href=3D"http://cqrcengage.com/casaa/app/th=
+ru?ep=3DAAAAC2Flc0NpcGhlcjAxiHUar2Izt81b0_TeDZk-jn7BFv5qyb2vOg8IpXng3-qJSC3=
+WTsR0sA3fKkmXk9R7k4hQmS2lHUgybnbfuV3Eb0Ap8qJiEt6MALdoQGTMXxMCuXpkAHh7ks8_40=
+GJ5D77uW-u297Fx9B7pPKQ6Cj7RHzMywERN05gjZYVLhmVLj3-JgzsfMkWoL2_O7MRiE4ehDimQ=
+_Rw7sx0j-PtbUpyeg&lp=3D0" style=3D"text-decoration-line: none;"><span style=
+=3D"font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); backgroun=
+d-color: transparent; font-style: italic; text-decoration-line: underline; =
+vertical-align: baseline; white-space: pre-wrap;">industry engagement here<=
+/span></a></strong><span style=3D"font-size: 11pt; font-family: Arial; colo=
+r: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; w=
+hite-space: pre-wrap;">)</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; vertical-align: baseline; white-space: pre-wrap;">C=
+hoose some of the points below to discuss in your comment:</span></span></p=
+>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span style=3D"font-size:12px;"><span id=3D"docs-internal-guid-5ceaee45-44=
+95-96f1-6166-edd40086756c"><span style=3D"font-family: Arial; color: rgb(0,=
+ 0, 0); background-color: transparent; vertical-align: baseline; white-spac=
+e: pre-wrap;">(See our writing tips if you need help personalizing your mes=
+sage)</span></span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+>&nbsp;</p>
+
+<ul style=3D"margin-top:0pt;margin-bottom:0pt;">
+=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font-fa=
+mily: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-a=
+lign: baseline;">
+=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0p=
+t;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><s=
+pan style=3D"font-size: 11pt; background-color: transparent; vertical-align=
+: baseline; white-space: pre-wrap;">Share your experience with vaping.</spa=
+n></span></p>
+=09</li>
+=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font-fa=
+mily: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-a=
+lign: baseline;">
+=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0p=
+t;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><s=
+pan style=3D"font-size: 11pt; background-color: transparent; vertical-align=
+: baseline; white-space: pre-wrap;">How long did you smoke?</span></span></=
+p>
+
+=09<ul style=3D"margin-top:0pt;margin-bottom:0pt;">
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">
+=09=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom=
+:0pt;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"=
+><span style=3D"font-size: 11pt; background-color: transparent; vertical-al=
+ign: baseline; white-space: pre-wrap;">How many times did you try to quit s=
+moking?</span></span></p>
+=09=09</li>
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">
+=09=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom=
+:0pt;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"=
+><span style=3D"font-size: 11pt; background-color: transparent; vertical-al=
+ign: baseline; white-space: pre-wrap;">Were you able to quit or significant=
+ly reduce your smoking?</span></span></p>
+=09=09</li>
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">
+=09=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom=
+:0pt;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"=
+><span style=3D"font-size: 11pt; background-color: transparent; vertical-al=
+ign: baseline; white-space: pre-wrap;">How long have you been smoke-free?</=
+span></span></p>
+=09=09</li>
+=09</ul>
+=09</li>
+=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font-fa=
+mily: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-a=
+lign: baseline;">
+=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0p=
+t;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><s=
+pan style=3D"font-size: 11pt; background-color: transparent; vertical-align=
+: baseline; white-space: pre-wrap;">What is your preferred flavor of e-liqu=
+id?</span></span></p>
+
+=09<ul style=3D"margin-top:0pt;margin-bottom:0pt;">
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">
+=09=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom=
+:0pt;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"=
+><span style=3D"font-size: 11pt; background-color: transparent; vertical-al=
+ign: baseline; white-space: pre-wrap;">Do you use a variety of flavored e-l=
+iquid and why is access to this variety important to you?</span></span></p>
+=09=09</li>
+=09</ul>
+=09</li>
+=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font-fa=
+mily: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-a=
+lign: baseline;">
+=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0p=
+t;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><s=
+pan style=3D"font-size: 11pt; background-color: transparent; vertical-align=
+: baseline; white-space: pre-wrap;">Have you noticed changes in your abilit=
+y to purchase vapor products as a result of the FDA deeming rule?</span></s=
+pan></p>
+
+=09<p style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</=
+p>
+
+=09<ul style=3D"margin-top:0pt;margin-bottom:0pt;">
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">
+=09=09<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom=
+:0pt;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"=
+><span style=3D"font-size: 11pt; background-color: transparent; vertical-al=
+ign: baseline; white-space: pre-wrap;">Are shops and/or manufacturers that =
+you purchase from shutting down?&#8203;</span></span></p>
+=09=09</li>
+=09=09<li dir=3D"ltr" style=3D"list-style-type: disc; font-size: 11pt; font=
+-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertica=
+l-align: baseline;">&nbsp;</li>
+=09</ul>
+=09</li>
+</ul>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;t=
+ext-align: center;"><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-=
+edd40086756c"><span style=3D"font-size: 18pt; font-family: Arial; color: rg=
+b(0, 0, 0); background-color: transparent; font-weight: 700; vertical-align=
+: baseline; white-space: pre-wrap;">Take Action - </span><a href=3D"http://=
+cqrcengage.com/casaa/app/thru?ep=3DAAAAC2Flc0NpcGhlcjAxFQesRXko-cM-LEyIv7Hg=
+jZ9FTFkIwBysNN46KaTClrDJfspTlcNGR3aO-Ue1vtUuIdx-i9DVHz_w_d7zMpY2_fT5ti47Jol=
+QMeLEu53pjg_N2nzDStfTqykjvK0XbrmWZr9inqYBVMVmy9tt8YQYWrddCE1s4eXaXqDq7KgHfE=
+HmJysDaxTzat-aSpL7iWXmSBoz71ke27hP7lrFb1qvUQ&lp=3D0" style=3D"text-decorati=
+on-line: none;"><span style=3D"font-size: 18pt; font-family: Arial; color: =
+rgb(17, 85, 204); background-color: rgb(0, 255, 0); font-weight: 700; text-=
+decoration-line: underline; vertical-align: baseline; white-space: pre-wrap=
+;">Post Your Comment</span></a><span style=3D"font-size: 18pt; font-family:=
+ Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: 70=
+0; vertical-align: baseline; white-space: pre-wrap;">!</span></span></p>
+
+<p>&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; vertical-align: baseline; white-space: pre-wrap;">(=
+</span><span style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0,=
+ 0); background-color: transparent; font-style: italic; vertical-align: bas=
+eline; white-space: pre-wrap;">If you are writing on behalf of a business, =
+please use the </span><a href=3D"http://cqrcengage.com/casaa/app/thru?ep=3D=
+AAAAC2Flc0NpcGhlcjAxJOssxjqfEIxMtlOp4-zNWsGB_gtTvB1Nc6BojQ12xLt-8fh2zWAQ7mv=
+ivHfBwRHuqHcRSKoq9feiltMvM9SKVd46BZJCKA6eVkfPQqlygbAdkuoNV223CITEiI6xn0Z3gp=
+UTuZSsri7n6r1MaHGkSCXvOKyERbTqvNwCNF2a4X14p88EW7tIefZr5F-EHjBlqDlvCKUgExK2_=
+jUpOD-_2g&lp=3D0" style=3D"text-decoration-line: none;"><span style=3D"font=
+-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color:=
+ transparent; font-style: italic; text-decoration-line: underline; vertical=
+-align: baseline; white-space: pre-wrap;">industry engagement here</span></=
+a><span style=3D"font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); =
+background-color: transparent; vertical-align: baseline; white-space: pre-w=
+rap;">)</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: =
+0pt; text-align: center;"><span style=3D"background-color: transparent; col=
+or: rgb(0, 0, 0); font-family: Arial; font-size: 11pt; white-space: pre-wra=
+p;">________________________________________</span></p>
+
+<p dir=3D"ltr" style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: =
+0pt; text-align: center;">&nbsp;</p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 9pt; font-family: Arial; color: rgb(106, 168, 79); bac=
+kground-color: transparent; font-weight: 700; vertical-align: baseline; whi=
+te-space: pre-wrap;">(Writing Tip #1)</span><span style=3D"font-size: 9pt; =
+font-family: Arial; color: rgb(153, 0, 0); background-color: transparent; v=
+ertical-align: baseline; white-space: pre-wrap;"> </span><span style=3D"fon=
+t-size: 9pt; font-family: Arial; color: rgb(0, 0, 0); background-color: tra=
+nsparent; vertical-align: baseline; white-space: pre-wrap;">If you have a l=
+ot to say, please craft your message in a separate word doc and then copy/p=
+aste it into the field provided. &nbsp;If you take too long, the system wil=
+l time out and you will lose your work.</span></span></p>
+
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt;"=
+><span id=3D"docs-internal-guid-5ceaee45-4495-96f1-6166-edd40086756c"><span=
+ style=3D"font-size: 9pt; font-family: Arial; color: rgb(106, 168, 79); bac=
+kground-color: transparent; font-weight: 700; vertical-align: baseline; whi=
+te-space: pre-wrap;">(Writing Tip #2)</span><span style=3D"font-size: 9pt; =
+font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; ver=
+tical-align: baseline; white-space: pre-wrap;"> Although we've provided a p=
+rewritten message with compelling talking points, we would strongly encoura=
+ge you to edit the email because personalized communications to legislators=
+ are far more persuasive than form letters. &nbsp;At a minimum, </span><spa=
+n style=3D"font-size: 9pt; font-family: Arial; color: rgb(0, 0, 0); backgro=
+und-color: transparent; font-weight: 700; vertical-align: baseline; white-s=
+pace: pre-wrap;">PLEASE INCLUDE YOUR PERSONAL STORY</span><span style=3D"fo=
+nt-size: 9pt; font-family: Arial; color: rgb(0, 0, 0); background-color: tr=
+ansparent; vertical-align: baseline; white-space: pre-wrap;"> (just a few s=
+entences) in the text of your message. </span></span></p>
+
+<div>&nbsp;</div>
+
+<p>&nbsp;</p></p></td></tr>
+=09        </table>
+=09      </td>
+      </tr>
+      <tr><td>&#160;</td></tr>
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"http://cqrcengage.com/casaa/app/subscriptions?r=3DAAAA=
+C2Flc0NpcGhlcjAxa2KneGvJiG1fy-TnBGoX5PLCGKqccCEKJGkRP_d-Yec" style=3D"color=
+: #000; text-decoration: none; padding-top:10px; padding-bottom:10px;">Unsu=
+bscribe</a>
+        </td>
+      </tr>
+     =20
+      <tr><td>&#160;</td></tr>
+
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"http://cqrcengage.com/casaa/app/thru?ep=3DAAAAC2Flc0Np=
+cGhlcjAxfmzx2CX1jjGSAEHOxsLoz7o0pDjg8gH2CEY5_D_a6LulB2ordIygxXYf1RnEROt7JGn=
+H245tYF-YT0huv37N-o8fWKouQ4wURihRer6y58YZsNinH2nm9VUaajI_cwrW&lp=3D0" style=
+=3D"color: #d6d2cb; text-decoration: none;">
+            <img src=3D"http://cqrcengage.com/assets/images/cqrollcall_emai=
+lFooter.png" alt=3D"Powered by CQRC Engage"/>
+          </a>
+          <img src=3D"http://cqrcengage.com/casaa/opened-mail/AAAAC2Flc0Npc=
+GhlcjAxa2KneGvJiG1fy-TnBGoX5PLCGKqccCEKJGkRP_d-Yec" alt=3D"" width=3D"1" he=
+ight=3D"1"/>
+        </td>
+      </tr>
+     =20
+    </table>
+
+  </font>=09
+</body>
+

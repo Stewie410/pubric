@@ -1,0 +1,6 @@
+#vim:ft=mutt
+# Mutt aliases: Examples
+
+alias	user1		user1@gmail.com
+alias 	user2		user2@rocketmail.com
+alias	group1		user1@gmail.com, user2@rocketmail.com

@@ -1,0 +1,21 @@
+#vim:ft=muttrc
+# Mutt keybindings
+
+# Vim controls
+bind editor 	<space> 	noop
+bind index 	G 		last-entry
+bind index	gg		first-entry
+bind index	d		half-down
+bind index	u		half-up
+bind index	D		delete-message
+bind index	U		undelete-message
+bind index	F		search
+bind index	R		group-reply
+bind index	":q"		exit
+
+# Other controls
+bind index	"{"		previous-thread
+bind index	"["		previous-thread
+bind index	"}"		next-thread
+bind index	"]"		next-thread
+bind index	fm		imap-fetch-mail

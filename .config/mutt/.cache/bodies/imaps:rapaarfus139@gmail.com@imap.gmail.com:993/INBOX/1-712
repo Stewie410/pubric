@@ -1,0 +1,193 @@
+Delivered-To: rapaarfus139@gmail.com
+Received: by 10.12.132.230 with SMTP id m93csp1411728qva;
+        Mon, 29 May 2017 14:41:06 -0700 (PDT)
+X-Received: by 10.55.23.195 with SMTP id 64mr18115836qkx.85.1496094066676;
+        Mon, 29 May 2017 14:41:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1496094066; cv=none;
+        d=google.com; s=arc-20160816;
+        b=n2EXU4Pj5lwRP3aMMVJ7IcNKwAFrYgdjT/IjSWI9JITD/P5EH9qH2da4gBhNJOekdd
+         4zDgEnPLG0mbYZC5Cxll4Hwhkc9LVF+d2t5u/PgEeHz1zCDOPVzRFD5yTD+BHx7lfcQb
+         8xeAnJmQbOP9ij5v/NOBSnCLnHKY5GTZ68yOsdpP4jAiDq0JO+ILgtBN/IAqW8VGAru8
+         ZWKOmos0D/mRCuHRITdwjZKY2laohPOjYJ3BW9+0gAEg64Ak6LmZTA7keOC7Lka/Kqh4
+         zctwet6jgX414d6VAD3Tq6Zg6lMUNmXaz6OtkZFrY4YzH9XESscOQGvdaYPUGF6OFXB4
+         K1Xw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:mime-version:subject:message-id:to:from:date
+         :dkim-signature:arc-authentication-results;
+        bh=LOex4uDKzwEaLiuNhYcViEe0Vvjt5GuGtzFO7njNUwQ=;
+        b=GmyfT7hrYqEPFXIxMzquEQQ6ZGxTkqWq4o852M3lZvgb/kcAKn0WJktidZZFKZ58rA
+         CXd8f5gGgaJWmuI4M6g1BZ98u8R3rNApP5fewhP8EVMY1cCxfZlszsSshLPGj93hHNiZ
+         TWNxpwc/CTgYu/lRqL4nkKcp5g6FsgxhiAicRjda2cDc6rcTcsXyRLBB8uKpKJlPc0Hf
+         ED75NVX3CGTHRYwKh/gtSBh0xBy/CXsDnhvbZIIFEWnWeYgOx2vIkhfzeLVZ39fn4leR
+         adI3qTo1IY6zyAnlSdQF5ArnyPd7AOjYRz0e/J3QSXMGICfiRbAH+Wue4Vt0uWcxkeuJ
+         T8NQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@agents.icims.com;
+       spf=pass (google.com: domain of erac+bounce+3t8fe-b8d8c400f8@agents.icims.com designates 162.247.160.152 as permitted sender) smtp.mailfrom=erac+bounce+3t8fe-b8d8c400f8@agents.icims.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=agents.icims.com
+Return-Path: <erac+bounce+3t8fe-b8d8c400f8@agents.icims.com>
+Received: from icims-talentplatform-160152.email.icims.tools (icims-talentplatform-160152.email.icims.tools. [162.247.160.152])
+        by mx.google.com with ESMTPS id k38si10986347qtf.53.2017.05.29.14.41.06
+        for <rapaarfus139@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 29 May 2017 14:41:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of erac+bounce+3t8fe-b8d8c400f8@agents.icims.com designates 162.247.160.152 as permitted sender) client-ip=162.247.160.152;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@agents.icims.com;
+       spf=pass (google.com: domain of erac+bounce+3t8fe-b8d8c400f8@agents.icims.com designates 162.247.160.152 as permitted sender) smtp.mailfrom=erac+bounce+3t8fe-b8d8c400f8@agents.icims.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=agents.icims.com
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple;
+  d=agents.icims.com; i=@agents.icims.com; q=dns/txt;
+  s=platform; t=1496094066; x=1527630066;
+  h=date:from:to:message-id:subject:mime-version:
+   list-unsubscribe;
+  bh=LOex4uDKzwEaLiuNhYcViEe0Vvjt5GuGtzFO7njNUwQ=;
+  b=UQRW2vZiiY7qi+SMBh78H8TNLSdUhRHHydA7hXwwIDlBvbe/8bqviiXW
+   +rL7j1kdt2z/Mm5ZkFc9RekcTB60h0WssPlrbRzJcwCD1TzKSUzsqekpM
+   BqqfV+yinEsNXBEt3HKl3pLoyVCTKxRW0Pqhta524RMLpd/LusuNV9SMH
+   oBvTWGVUkw3DYHqv+1XskiEqJxf8VlhwT+LaAw9ltz9IqekxNd2+dyYok
+   5sWJsRfBAOnUxNlWHnAZ1Qu6H2IqZXD9fM2JNqi9eN6oYu/9dTXuNqiOb
+   Zf/o2NWBsHqiATYDIvsJe2r2x52PvWPgqkC29yocSWxc2Ev3kdpxub0Wx
+   A==;
+X-IronPort-AV: E=Sophos;i="5.38,415,1491278400"; 
+   d="scan'208";a="130944106"
+Received: from unknown (HELO ip-10-47-5-74.ec2.internal) ([10.30.10.250])
+  by icims-talentplatform-160160.email.icims.tools with ESMTP; 29 May 2017 17:41:06 -0400
+Date: Mon, 29 May 2017 17:41:06 -0400 (EDT)
+From: Lacey Sanders <erac+email+3t8fe-b8d8c400f8@agents.icims.com>
+To: rapaarfus139@gmail.com
+Message-ID: <1433376935.33585.1496094066181@ip-10-47-5-74.ec2.internal>
+Subject: Thank you for your interest
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_33583_1950796153.1496094066179"
+List-Unsubscribe: <mailto:erac+autoreply+1A355472662@agents.icims.com?subject=unsubscribe&contactId=39376841>, <https://erac.icims.com/icims2/?r=1A355472662&contactId=39376841&process=1>
+X-iRecruiter-Type: IE
+X-iCIMS-Type: IE
+X-iCIMS-Priority: Normal
+X-iRecruiter-Source: erac
+
+------=_Part_33583_1950796153.1496094066179
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Richard,
+=C2=A0
+Thank you for your interest in employment opportunities with Enterprise.
+=C2=A0
+We=C2=A0have received your application for the Part Time Service Agent, how=
+ever you did not meet one or more of=C2=A0the minimum qualifications for th=
+e position as stated below.=C2=A0=C2=A0
+
+=C2=A0<ul><li><span style=3D"font-family: verdana, geneva;">Must be willing=
+ to accept the pay rate of $9.00 per hour</span></li><li><span style=3D"fon=
+t-family: verdana, geneva;">Must be at least 18 years old</span></li><li><s=
+pan style=3D"font-family: verdana, geneva;">Must be willing and able to&nbs=
+p;work outdoors and clean cars</span></li><li><span style=3D"font-family: v=
+erdana, geneva;">Must have a valid driver's license with no more than 2 mov=
+ing violations and/or at-fault accidents on driving record in the past&nbsp=
+;3 years</span></li><li><span style=3D"font-family: verdana, geneva;">No dr=
+ug or alcohol related conviction on driving record in the past&nbsp;5 years=
+</span></li><li><span style=3D"font-family: verdana, geneva;">Must be autho=
+rized to work in the United States and not require work authorization spons=
+orship by our company for this position now or in the future.</span></li><l=
+i><span style=3D"font-family: verdana, geneva;">Must be able to understand,=
+ read, write or speak English</span></li><li><span style=3D"font-family: ve=
+rdana, geneva;">Must be willing to accept a part time position&nbsp;working=
+ up to 25 hours each week</span></li><li><span style=3D"font-family: verdan=
+a, geneva;">Must be&nbsp;interested in&nbsp;permanent part time employment,=
+ not ideal for candidates seeking temporary employment</span></li><li><span=
+ style=3D"font-family: verdana, geneva;">Apart from religious observation c=
+andidates must be able to work the following schedule each week:</span></li=
+></ul><p style=3D"margin: 0px;">SUNDAY: OFF</p><p style=3D"margin: 0px;">MO=
+NDAY: 7:30 AM - 3:30 PM<br />TUESDAY: 8:00 AM- 3:00 PM<br />WEDNESDAY: OFF<=
+/p><p style=3D"margin: 0px;">THURSDAY: OFF<br />FRIDAY: 10:00 AM - 4:00 PM<=
+br />SATURDAY: 8:00 AM - 12:00 PM</p><p style=3D"margin: 0px;">&nbsp;</p><p=
+ style=3D"margin: 0px;">&nbsp;</p><p style=3D"margin: 0px;">&nbsp;</p><p st=
+yle=3D"margin: 0px;">&nbsp;</p><p style=3D"padding-left: 90px;">&nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+=C2=A0
+Your specific answer(s) that disqualified you:
+=C2=A0
+Created By Richard Paarfus5/25/2017 12:20 PMDNQ'd due to the following ques=
+tions:
+
+Q: What type of employment are you currently seeking?
+A: Permanent Full Time (40+ hours per week)
+=C2=A0
+=C2=A0
+If you feel that you have received this in error, please let me know and we=
+ can discuss. Again, thank you for your interest=C2=A0in employment opportu=
+nities. =C2=A0We wish you much luck in your job search!
+=C2=A0
+Sincerely,
+Lacey Sanders
+E465NV@erac.com
+=C2=A0
+------=_Part_33583_1950796153.1496094066179
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<p style=3D"margin: 0px;"><span style=3D"font-family: times new roman,times=
+; font-size: small;">Dear Richard,</span></p><p style=3D"margin: 0px;"><spa=
+n style=3D"font-family: times new roman,times; font-size: small;">&nbsp;</s=
+pan></p><p style=3D"margin: 0px;"><span style=3D"font-family: times new rom=
+an,times; font-size: small;">Thank you for your interest in employment oppo=
+rtunities with Enterprise.</span></p><p style=3D"margin: 0px;"><span style=
+=3D"font-family: times new roman,times; font-size: small;">&nbsp;</span></p=
+><p style=3D"margin: 0px;"><span style=3D"font-family: times new roman,time=
+s; font-size: small;">We&nbsp;have received your application for the Part T=
+ime Service Agent, however you did not meet one or more of&nbsp;the minimum=
+ qualifications for the position as stated below.&nbsp;&nbsp; <br /></span>=
+</p><p style=3D"margin: 0px;"><span style=3D"font-family: times new roman,t=
+imes; font-size: small;">&nbsp;<ul><li><span style=3D"font-family: verdana,=
+ geneva;">Must be willing to accept the pay rate of $9.00 per hour</span></=
+li><li><span style=3D"font-family: verdana, geneva;">Must be at least 18 ye=
+ars old</span></li><li><span style=3D"font-family: verdana, geneva;">Must b=
+e willing and able to&nbsp;work outdoors and clean cars</span></li><li><spa=
+n style=3D"font-family: verdana, geneva;">Must have a valid driver's licens=
+e with no more than 2 moving violations and/or at-fault accidents on drivin=
+g record in the past&nbsp;3 years</span></li><li><span style=3D"font-family=
+: verdana, geneva;">No drug or alcohol related conviction on driving record=
+ in the past&nbsp;5 years</span></li><li><span style=3D"font-family: verdan=
+a, geneva;">Must be authorized to work in the United States and not require=
+ work authorization sponsorship by our company for this position now or in =
+the future.</span></li><li><span style=3D"font-family: verdana, geneva;">Mu=
+st be able to understand, read, write or speak English</span></li><li><span=
+ style=3D"font-family: verdana, geneva;">Must be willing to accept a part t=
+ime position&nbsp;working up to 25 hours each week</span></li><li><span sty=
+le=3D"font-family: verdana, geneva;">Must be&nbsp;interested in&nbsp;perman=
+ent part time employment, not ideal for candidates seeking temporary employ=
+ment</span></li><li><span style=3D"font-family: verdana, geneva;">Apart fro=
+m religious observation candidates must be able to work the following sched=
+ule each week:</span></li></ul><p style=3D"margin: 0px;">SUNDAY: OFF</p><p =
+style=3D"margin: 0px;">MONDAY: 7:30 AM - 3:30 PM<br />TUESDAY: 8:00 AM- 3:0=
+0 PM<br />WEDNESDAY: OFF</p><p style=3D"margin: 0px;">THURSDAY: OFF<br />FR=
+IDAY: 10:00 AM - 4:00 PM<br />SATURDAY: 8:00 AM - 12:00 PM</p><p style=3D"m=
+argin: 0px;">&nbsp;</p><p style=3D"margin: 0px;">&nbsp;</p><p style=3D"marg=
+in: 0px;">&nbsp;</p><p style=3D"margin: 0px;">&nbsp;</p><p style=3D"padding=
+-left: 90px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p></span></p><p sty=
+le=3D"margin: 0px;"><span style=3D"font-family: times new roman,times; font=
+-size: small;">&nbsp;</span></p><p style=3D"margin: 0px;"><span style=3D"fo=
+nt-family: times new roman,times; font-size: small;">Your specific answer(s=
+) that disqualified you:</span></p><p style=3D"margin: 0px;">&nbsp;</p><div=
+ class=3D"updatedInfo"><div class=3D"floatLeft"><span class=3D"label">Creat=
+ed By </span>Richard Paarfus</div><div class=3D"floatRight">5/25/2017 12:20=
+ PM</div></div><div id=3D"body_39351113" class=3D"body">DNQ'd due to the fo=
+llowing questions:<br /><br />Q: What type of employment are you currently =
+seeking?<br />A: Permanent Full Time (40+ hours per week)</div><p style=3D"=
+margin: 0px;">&nbsp;</p><p style=3D"margin: 0px;">&nbsp;</p><p style=3D"mar=
+gin: 0px;"><span style=3D"font-size: small; font-family: times new roman,ti=
+mes;"><span>If you feel that you have received this in error, please let me=
+ know and we can discuss. </span><span>Again, thank you for your interest&n=
+bsp;in employment opportunities. &nbsp;We wish you much luck in your job se=
+arch!</span></span></p><p style=3D"margin: 0px;"><span style=3D"font-family=
+: times new roman,times; font-size: small;">&nbsp;</span></p><p style=3D"ma=
+rgin: 0px;"><span style=3D"font-family: times new roman,times; font-size: s=
+mall;">Sincerely,</span></p><p style=3D"margin: 0px;"><span style=3D"font-f=
+amily: times new roman,times; font-size: small;">Lacey Sanders</span></p><p=
+ style=3D"margin: 0px;"><span style=3D"font-family: times new roman,times; =
+font-size: small;">E465NV@erac.com</span></p><p style=3D"margin: 0px;"><spa=
+n style=3D"font-family: times new roman,times; font-size: small;">&nbsp;</s=
+pan></p>
+------=_Part_33583_1950796153.1496094066179--

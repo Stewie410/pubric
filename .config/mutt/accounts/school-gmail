@@ -1,0 +1,25 @@
+#vim:ft=mutt
+# Example school (gmail) conf
+
+set imap_user = 		"user@mail.school.edu"
+set imap_pass = 		"pass"
+set smtp_url = 			"smtp://user@smtp.gmail.com:/587/"
+set smtp_pass = 		"pass"
+set from = 			"user@mail.school.edu"
+set realname = 			"Real Name"
+
+set folder = 			"imaps://imap.gmail.com:993/"
+set spoolfile = 		"+INBOX"
+set record = 			/dev/null
+set postponed = 		"+[Gmail]/Drafts"
+set header_cache = 		~/.config/mutt/.cache/headers
+set message_cachedir = 		~/.config/mutt/.cache/bodies
+set certificate_file = 		~/.config/mutt/.cache/certificates
+set ssl_starttls = 		yes
+set ssl_force_tls = 		yes
+
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mail"
+macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"

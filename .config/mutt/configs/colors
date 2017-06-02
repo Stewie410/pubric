@@ -1,0 +1,99 @@
+#vim:ft=muttrc
+
+# Basic colors
+color normal		white		default						# Normal text
+color error		red		default						# Error Indicator
+color tilde		green		default						# ~ (Used to pad blank lines in pager)
+color message		blue		default						# Text in messages
+color markers		red		white						# Markers
+color attachment	black		green						# Attachments
+color search		magenta		default						# Search function
+color status		brightwhite	default						# Status bar
+color indicator		brightmagenta	black						# Currently Selected Message
+color tree		yellow		default						# Thread indicator
+
+# Basic monocolor screen
+mono bold		bold								# Display as bold
+mono underline		underline							# Display as underline
+mono indicator		reverse								# Reverse BG/FG
+mono error		bold								# Display errors as bold
+
+# Index colors
+color index		red		default		"~A"				# All messages
+color index		brightred	default		"~E"				# Expired Messages
+color index 		blue		default		"~N"				# New messages
+color index		blue		default		"~O"				# Old messages
+color index		brightmagenta	default		"~Q"				# Messages that have been replied to
+color index		brightgreen	default		"~R"				# Read messages
+color index		blue		default		"~U"				# Unread messages
+color index		blue		default		"~U~$"				# Unread, unreferenced messages
+color index		brightyellow	default		"~v"				# Messages part of a collapsed thread
+color index		brightyellow	default		"~P"				# Messages from me
+color index		cyan		default		"~p!~F"				# Messages to me
+color index		cyan		default		"~N~p!~F"			# Messages to me, new
+color index		cyan		default		"~U~p!~F"			# Messages to me, unread
+color index		brightgreen	default		"~R~p!~F"			# Messages to me
+color index		red		default		"~F"				# Flagged messages
+color index		red		default		"~F~p"				# Flagged messages, to me
+color index		red		default		"~N~F"				# Flagged messages, new
+color index		red		default		"~N~F~p"			# Flagged messages, new, to me
+color index		red		default		"~U~F~p"			# Flagged messages, new, to me
+color index		black		red		"~D"				# Deleted messages
+color index		brightcyan	default		"~v~(!~N)"			# Collapsed thread with no unread
+color index		yellow		default		"~v~(~N)"			# Collapsed thread with some unread
+color index		green		default		"~N~v~(~N)"			# Collapsed thread with unread parent
+color index		red		black		"~v~(~F)!~N"			# Collapsed thread with flagged, no unread
+color index		yellow		black		"~v~(~F~N)"			# Collapsed thread with flagged, some unread
+color index		green		black		"~N~v~(~F~N)"			# Collapsed thread with flagged, unread parent
+color index		green		black		"~N~v~(~F)"			# Collapsed thread with unread parent, no unread inside, but some flagged
+color index		cyan		black		"~v~(~p)"			# Collapsed thread with unread parent, no unread inside, some to me direct
+color index		yellow		red		"~v~(~D)"			# Thread with deleted (Doesn't diff between all or partial)
+
+# Message headers
+color hdrdefault	brightgreen	default						#		
+color header		brightyellow	default		"^(From)"			#
+color header		blue		default		"^(Subject)"			#
+
+# Body
+color quoted		blue		default						#
+color quoted1		cyan		default						#
+color quoted2		yellow		default						#
+color quoted3		red		default						#
+color quoted4		brightred	default						#
+color signature		brightgreen	default						#
+color bold		black		default						#
+color underline		black		default						#
+color normal		default		default						#
+color body		brightcyan	default		"[;:][-o][)/(|]"		# Emoticons
+color body		brightcyan	default		"[;:][)(|]"			# Emoticons
+color body		brightcyan	default		"[*]?((N)?ACK|CU|LOL|SCNR|BRB|BTW|CWYL|FWIW|vbg|GD&R|HTH|HTHBE|IMHO|IMNSHO|IRL|RFTM|ROTFL|ROFL|YMMV)[*]?"
+color body		brightcyan	default		"[ ][*][^*]*[*][ ]?"		# More emoticons?
+color body		brightcyan	default		"[ ]?[*][^*]*[*][ ]"		# More emoticons?
+color body		red		default		"(BAD signature)"		# Bad PGP signature
+color body		cyan		default		"(GOOD signature)"		# Good PGP signature
+color body		brightblack	default		"gpg: Good Signature .*"	# 
+color body		brightyellow	default		"gpg: "				# 
+color body		brightyellow	red		"^gpg: BAD signature from.*"	# 
+mono  body		bold				"^gpg: GOOD signature"		# 
+mono  body		bold				"^gpg: BAD Signature from.*"	# 
+
+# URL Regex: Insanity edition
+color body		red		default		"([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
+
+# Neomutt specific colors
+# Index
+color index_author	cyan		default		"[.]"				# Author name column (Any author)
+color index_collapsed	blue		default						# Collapsed messages count column
+color index_date	yellow		default						# Dates column
+color index_flags	white		default		"[.]"				# Message flags column (Any flag)
+color index_label	blue		default						# Message label column
+color index_number	white		default						# Message count column
+color index_size	white		default						# Message size and line count column
+color index_subject	brightgreen	default		"[.]"				# Subject column (Any subject)
+color index_tags	brightyellow	default						# Transformed Message Tags
+color index_tag		white		default		"[.]"				# Individual Message Tag (Any tag)
+
+# Progress bar
+color progress		blue		default						# Visual progress bar
+
+

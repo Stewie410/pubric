@@ -1,0 +1,445 @@
+;==================================================================
+;
+;	To learn more about how to configure polybar go to:
+;		https://github.com/jaagr/polybar/wiki
+;
+;===================================================================
+;
+;
+;
+;	Config written by Stewie410 <stewie410@me.com>
+;	OS:		Arch Linux
+;	Kernel:		Kernel 4.11.2-1-ARCH
+;	Shell:		bash 4.4.12
+;	WM:		i3wm (gaps)
+
+
+[colors]
+bg = 				#222
+bg-alt	= 			#444
+fg =				#dfdfdf
+fg-alt =			#555
+primary =			#ffb52a
+secondary = 			#e60053
+alert =				#bd2c40
+black = 			#000
+white = 			#fff
+red = 				#f00
+blue = 				#0f0
+green = 			#00f
+
+[fonts]
+default = 			fixed:pixelsize=10;1
+uni = 				unifont:fontformat=true:size=8:antialias=false;0
+siji =	 			siji:pixelsize=10;1
+awesome = 			FontAwesome:pixelsize=10;2
+notomono = 			NotoMono-Regular:fontformat=true:size=10:antialias=true;2
+nimbus = 			NimbusMonoPS-Regular:fontformat=true:size=10:antialias=true;1
+hack = 				Hack-Regular:fontformat=true:size=10:antialias=true;1
+dejavu = 			DejaVuSans:fontformat=true:size=10:antialias=true;1
+liberation =			LiberationSans-Regular:fontformat=true:size=9:antialias=true;2
+notosans = 			NotoSans-Regular:fontformat=true:size=10:antialias=true;1
+iosevka = 			iosevka-thin:fontformat=true:size=10:antialias=true;1
+roboto =			Roboto-Regular:fontformat=true:size=10:antialias=true;1
+
+[vars]
+monitor = 			${env:MONITOR:LVDS-1}
+width = 			100%
+height = 			14
+border-size = 			0
+border-color = 			${colors.bg-alt}
+padding-left = 			1
+padding-right = 		2
+module-margin-left = 		1
+module-margin-right = 		2
+
+; Bar tbar -- displaying env info
+[bar/tbar]
+; Confirguration Options
+monitor = 			${vars.monitor}
+width = 			${vars.width}
+height =			${vars.height}
+fixed-center = 			false
+bottom =			false
+;override-redirect = 		true
+;wm-restack = 			i3
+
+; Coloring
+background = 			${colors.bg}
+foreground = 			${colors.fg}
+
+; Border options
+border-size = 			${vars.border-size}
+border-color =			${vars.border-color}
+
+; Padding options
+padding-left =			${vars.padding-left}
+padding-right = 		${vars.padding-right}
+
+; Fonts
+font-0 = 			${fonts.liberation}
+font-1 =			${fonts.uni}
+font-2 =			${fonts.siji}
+font-3 = 			${fonts.awesome}
+
+; Module Settings
+;
+; Module Magins
+module-margin-left = 		${vars.module-margin-left}
+module-margin-right = 		${vars.module-margin-right}
+
+; What Modules go where?
+modules-left = 			weather redshift archupdates
+modules-center = 		xwindow
+modules-right = 		volume battery date powermenu
+
+; Systray options
+tray-position = 		right
+;tray-padding =			2
+
+; Bar bbar -- displaying system info
+[bar/bbar]
+monitor = 			${vars.monitor}
+width = 			${vars.width}
+height = 			${vars.height}
+fixed-center = 			true
+bottom = 			true
+spacing = 			1
+;override-redirect = 		true
+;wm-restack = 			i3
+
+overline-size = 		0
+overline-color = 		${colors.bg-alt}
+
+background = 			${colors.bg}
+foreground = 			${colors.fg}
+
+border-size = 			${vars.border-size}
+border-color = 			${vars.border-color}
+
+padding-left = 			${vars.padding-left}
+padding-right = 		${vars.padding-right}
+
+module-margin-left = 		${vars.module-margin-left}
+module-margin-right = 		${vars.module-margin-right}
+
+font-0 = 			${fonts.liberation}
+font-1 = 			${fonts.uni}
+font-2 = 			${fonts.siji}
+font-3 = 			${fonts.awesome}
+
+
+modules-left = 			i3
+modules-center = 		spotifyinfo
+modules-right = 		fsroot fshome temperature cpu memory wlan eth
+
+; Modules
+;
+; Built-in
+
+[module/i3]
+type =				internal/i3
+format = 			<label-state> <label-mode>
+index-sort =			true
+wrapping-scroll =		false
+strip-wsnumbers = 		true
+
+; Label Options
+;
+; Mode-unspecified options
+label-mode-padding = 		1
+label-mode-foreground = 	${colors.bg}
+label-mode-background =		${colors.fg}
+
+; Focused options
+label-focused = 		%name% %icon%
+label-focused-background =	${colors.bg}
+label-focused-foreground =	${colors.fg}
+label-focused-padding =		1
+
+; Unfocused options
+label-unfocused = 		%name% %icon%
+label-unfocused-background =	${colors.bg}
+label-unfocused-foreground =	${colors.fg-alt}
+label-unfocused-padding = 	1
+
+; Visible options
+label-visible = 		%name% %icon%
+label-visible-background =	${colors.bg}
+label-visible-foreground =	${colors.fg}
+label-visible-padding = 	1
+
+; Urgent options
+label-urgent = 			%name% %icon%
+label-urgent-background =	${colors.bg}
+label-urgent-foreground =	${colors.alert}
+label-urgent-padding =		1
+
+; Workspace options
+; ws-icon-# = 			#;icon
+ws-icon-0 = 			1;
+ws-icon-1 = 			2;
+ws-icon-2 = 			3;
+ws-icon-3 = 			4;
+ws-icon-4 = 			5;
+ws-icon-5 = 			6;
+ws-icon-6 = 			7;
+ws-icon-7 = 			8;
+ws-icon-8 = 			9;
+ws-icon-9 = 			10;
+ws-icon-default = 		+
+
+
+
+[module/xwindow]
+type = 				internal/xwindow
+label = 			%title:0:30:...%
+
+
+[module/volume]
+type = 				internal/volume
+master-soundcard = 		default
+speaker-soundcard = 		default
+headphone-soundcard =		default
+master-mixer = 			Master
+mapping = 			true
+
+; Formatting options
+format-volume = 		<label-volume> <bar-volume>
+
+; Label options
+label-volume = 			VOL
+label-volume-foreground = 	${colors.fg}
+label-muted = 			Muted
+label-muted-foreground = 	${colors.fg-alt}
+
+; Bar options
+bar-volume-width = 		10
+bar-volume-indicator = 			
+bar-volume-fill = 		—
+bar-volume-empty = 		—
+bar-volume-gradient = 		false
+bar-volume-fill-font = 		2
+bar-volume-empty-font = 	2
+; Bar-volume coloring
+bar-volume-foreground-0 = 	#55aa55
+bar-volume-foreground-1 = 	#55aa55
+bar-volume-foreground-3 = 	#55aa55
+bar-volume-foreground-4 = 	#55aa55
+bar-volume-foreground-5 = 	#f5a70a
+bar-volume-foreground-6 = 	#ff5555
+bar-volume-empty-foreground = 	${colors.fg-alt}
+
+
+
+[module/battery]
+type = 				internal/battery
+full-at = 			99
+battery = 			BAT1
+adapter = 			ACAD
+poll-interval = 		5
+
+; Formatting options
+format-charging = 		<animation-charging> <label-charging>
+format-discharging = 		<ramp-capacity> <label-discharging>
+format-full = 			<label-full>
+format-full-prefix = 		" "
+
+; Label options
+label-charging = 		%percentage%%
+label-discharging = 		%percentage%%
+label-full = 			%percentage%%
+label-charging-foreground = 	${colors.fg-alt
+label-discharging-foreground =	${colors.fg}
+label-full-foreground =		${colors.fg-alt}
+
+; Ramp Options
+ramp-capacity-0 = 		
+ramp-capacity-1 = 		
+ramp-capacity-2 =  		
+ramp-capacity-3 = 		
+ramp-capacity-4 = 		i
+ramp-capacity-foreground = 	${colors.fg}
+
+; Animation Options
+animation-charging-0 = 		
+animation-charging-1 = 		
+animation-charging-2 = 		
+animation-charging-3 = 		
+animation-charging-foreground = ${colors.fg}
+animation-charging-framerate = 	750
+
+
+
+[module/date]
+type = 				internal/date
+interval = 			5
+
+; Date options
+date = 				
+date-alt = 			" %a %D"
+
+; Time options
+time = 				"%I:%M %p"
+time-alt = 			"%#r"
+
+; Label options
+label = 			%date% %time%
+
+
+
+[module/fsroot]
+type = 				internal/fs
+interval = 			25
+fixed-values = 			true
+
+; Mount Points to Display
+mount-0 = 			/
+
+; Format options
+format-mounted = 		<label-mounted>
+
+; Label options
+label-mounted = 		/:%percentage_used%%
+
+[module/fshome]
+type = 				internal/fs
+interbal = 			25
+fixed-values = 			true
+
+mount-0 = 			/home
+format-mounted = 		<label-mounted>
+label-mounted = 		~:%percentage_used%%
+
+[module/memory]
+type = 				internal/memory
+interval = 			2
+
+; Label options
+label = RAM: %percentage_used%%
+
+
+
+[module/cpu]
+type = 				internal/cpu
+interval = 			2
+
+; Label options
+label = 			CPU: %percentage%%
+
+
+
+[module/wlan]
+type = 				internal/network
+interface = 			wlp7s0
+interval = 			3.0
+
+; Formate options
+format-connected = 		<label-connected>
+format-disconnected = 		<label-disconnected>
+
+; Label options
+label-connected = 		 %essid%
+label-connected-foreground = 	${colors.fg}
+label-disconnected = 		
+label-disconnected-foreground = ${colors.fg-alt}
+
+
+
+[module/eth]
+type = 				internal/network
+interface = 			enp2s0
+interval = 			3.0
+
+; Format options
+format-connected = 		<label-connected>
+format-disconnected = 		<label-disconnected>
+
+; Label options
+label-connected = 		%essid%
+label-disconnected = 		
+
+
+
+; Custom Menu
+
+[module/powermenu]
+type = 				custom/menu
+
+; Formatting options
+format-spacing = 		1
+
+; Label options for "main" menu
+label-open = 			""
+label-open-foreground = 	${colors.fg}
+label-close = 			""
+label-close-foreground = 	${colors.alert}
+label-separator = 		|
+label-separator-foreground = 	${colors.fg-alt}
+
+; Menu settings
+menu-0-0 = 			""
+menu-0-0-exec = 		/bin/lock
+menu-0-1 = 			""
+menu-0-1-exec = 		i3 exit
+menu-0-2 = 			""
+menu-0-2-exec = 		reboot
+menu-0-3 = 			""
+menu-0-3-exec = 		poweroff
+
+
+
+; Custom Scripts
+[module/weather]
+type = 				custom/script
+interval = 			120
+format = 			<label>
+format-prefix = 		" "
+format-prefix-foreground = 	${colors.fg}
+exec = 				~/.config/polybar/weather.select
+
+
+
+
+[module/redshift]
+type = 				custom/script
+interval = 			30
+exec = 				~/.config/polybar/redshift.sh
+click-left = 			source ~/.scripts/tools/redshift_start.sh restart
+
+
+
+[module/archupdates]
+type = 				custom/script
+interval = 			60
+format = 			<label>
+exec = 				~/.config/polybar/archupdates.sh
+exec-if = 			"ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+
+[module/temperature]
+type = 				custom/script
+interval = 			5
+format = 			<label>
+format-prefix = 		" "
+format-prefix-foreground = 	${colors.fg}
+exec = 				~/.config/polybar/temperature.sh
+
+
+
+[module/spotifyinfo]
+type = 				custom/script
+interval = 			5
+format = 			<label>
+click-left = 			playerctl next
+click-right = 			playerctl previous
+exec = 				~/.config/polybar/spotifyinfo.sh
+exec-if = 			"pgrep -x spotify > /dev/null"
+
+
+[settings/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+
+; vim:ft=dosini
